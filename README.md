@@ -86,7 +86,7 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
                    "target_rank": 4}
       }
       ```
-    - Details on each entry can be found in the supp. mat. of our paper.
+    - Details on each entry can be found in the supp. mat. Sec.G of our paper.
 
  - `captions_ext/cap.ext.VER.SPLIT.json`
     - A list of elements, where each element contains auxiliary annotations on a query-target pair, example:
@@ -100,7 +100,7 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
                          "3": "background should contain grass"}
       }
       ```
-    - Details on the auxiliary annotations can be found in the supp. mat. of our paper.
+    - Details on the auxiliary annotations can be found in the supp. mat. Sec.C of our paper.
 
  - `image_splits/split.VER.SPLIT.json`
     - A list of elements, where each element maps an image filename to the relative path of the img file, example:
@@ -112,13 +112,13 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
       }
       ```
     - image filenames are preserved from the NLVR2 dataset.
- - `img_feat_<...>`
+ - `img_feat_<...>/`
     - A folder containing a certain type of pre-extracted image features, each file saves the feature of one image.
     - Filename is generated as such:
       ```python
-      "test1-147-1-img1.png".replace('.png','.pkl')
+      <IMG0_ID> = "test1-147-1-img1.png".replace('.png','.pkl')
       ```
-      i.e., `test1-147-1-img1.pkl`, so that it can be directly indexed by the `image_splits` json files.
+      i.e., `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
 We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted at: [https://cirr.cecs.anu.edu.au/](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
@@ -132,6 +132,7 @@ We do not publish the ground-truth for the test-split of CIRR. Instead, an evalu
  
 ## Citation
 
+Please cite our paper if it helps your research:
 ```
 # TODO
 ```
