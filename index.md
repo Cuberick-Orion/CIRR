@@ -4,7 +4,7 @@ We expand the task of composed image retrieval by introducing the **C**omposed *
 
 ![Demo image from CIRR data](demo_imgs/project_page_demo_img_0.png)
 
-Concurrently, we release the code and pre-trained models for our method **C**omposed **I**mage **R**etrieval using **P**retrained **LAN**guage **T**ransformers (CIRPLANT). Together with the dataset, we believe this work will inspire further research on this task on a finer-grain level.
+Concurrently, we release the code and pre-trained models for our method **C**omposed **I**mage **R**etrieval using **P**retrained **LAN**guage **T**ransformers (**CIRPLANT**). Together with the dataset, we believe this work will inspire further research on this task on a finer-grain level.
 
 Read more in our [published paper](#).
 
