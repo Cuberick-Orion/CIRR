@@ -7,7 +7,7 @@ We expand the task of composed image retrieval by introducing the **C**omposed *
 Concurrently, we release the code for our baseline method **C**omposed **I**mage **R**etrieval using **P**retrained **LAN**guage **T**ransformers (CIRPLANT).
 
 ----
-You are currently viewing the [Project homepage](https://cuberick-orion.github.io/CIRR/).
+<sub>You are currently viewing the [Project homepage](https://cuberick-orion.github.io/CIRR/).</sub>
 
 
 ## CIRR Dataset
