@@ -12,6 +12,14 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ### Annotations
 
+Directly download by zip, or clone this repository to local by:
+
+```bash
+git clone git@github.com:Cuberick-Orion/CIRR.git
+```
+
+The `data` folder structure is described [below](#dataset-file-structure), you can find all relevant annotations in the `.json` files.
+
 ### Pre-extracted Image Features
 
 ### Raw Images
@@ -23,6 +31,39 @@ Training and testing on CIRR does not require the raw images. However, should yo
 >To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
 ## Dataset File Structure
+
+The downloaded dataset should look like this:
+
+```
+data
+└─── cirr
+     ├─── captions
+     │        cap.<VER>.test1.json
+     │        cap.<VER>.train.json
+     │        cap.<VER>.val.json
+     ├─── captions_ext
+     │        cap.ext.<VER>.test1.json
+     │        cap.ext.<VER>.train.json
+     │        cap.ext.<VER>.val.json
+     ├─── image_splits
+     │        split.<VER>.test1.json
+     │        split.<VER>.train.json
+     │        split.<VER>.val.json
+     ├─── img_feat_frcnn_filtered
+     │        <IMG0_ID>.pkl
+     │        <IMG1_ID>.pkl
+     │            ...
+     ├─── img_feat_res152
+     │        <IMG0_ID>.pkl
+     │        <IMG1_ID>.pkl
+     │            ...
+     └─── img_raw
+              <IMG0_ID>.pkl
+              <IMG1_ID>.pkl
+                  ...     
+```
+
+where, `<VER>` is the dataset version, `img_feat` folders contain different types of feature.
 
 ## Dataset Description
 
