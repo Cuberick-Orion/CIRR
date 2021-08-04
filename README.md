@@ -69,23 +69,56 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
 
  - `captions/cap.VER.SPLIT.json`
     - A list of elements, where each element contains core information on a query-target pair, example:
-    ```json
-    {"pairid": 12063, 
-     "reference": "test1-147-1-img1", 
-     "target_hard": "test1-83-0-img1", 
-     "target_soft": {"test1-83-0-img1": 1.0}, 
-     "caption": "remove all but one dog and add a woman hugging it", 
-     "img_set": {"id": 1, 
-                 "members": ["test1-147-1-img1", 
-                             "test1-1001-2-img0",  
-                             "test1-83-1-img1",           
-                             "test1-359-0-img1",  
-                             "test1-906-0-img1", 
-                             "test1-83-0-img1"],
-                 "reference_rank": 3, 
-                 "target_rank": 4}
-    }
-    ```
+      ```json
+      {"pairid": 12063, 
+       "reference":   "test1-147-1-img1", 
+       "target_hard": "test1-83-0-img1", 
+       "target_soft": {"test1-83-0-img1": 1.0}, 
+       "caption": "remove all but one dog and add a woman hugging   it", 
+       "img_set": {"id": 1, 
+                   "members": ["test1-147-1-img1", 
+                               "test1-1001-2-img0",  
+                               "test1-83-1-img1",           
+                               "test1-359-0-img1",  
+                               "test1-906-0-img1", 
+                               "test1-83-0-img1"],
+                   "reference_rank": 3, 
+                   "target_rank": 4}
+      }
+      ```
+    - Details on each entry can be found in the supp. mat. of our paper.
+
+ - `captions_ext/cap.ext.VER.SPLIT.json`
+    - A list of elements, where each element contains auxiliary annotations on a query-target pair, example:
+      ```json
+      {"pairid": 12063, 
+      "reference":   "test1-147-1-img1", 
+      "target_hard": "test1-83-0-img1", 
+      "caption_extend": {"0": "being a photo of dogs", 
+                         "1": "add a big dog", 
+                         "2": "more focused on the hugging", 
+                         "3": "background should contain grass"}
+      }
+      ```
+    - Details on the auxiliary annotations can be found in the supp. mat. of our paper.
+
+ - `image_splits/split.VER.SPLIT.json`
+    - A list of elements, where each element maps an image filename to the relative path of the img file, example:
+      ```json
+      {"test1-147-1-img1": "./test1/test1-147-1-img1.png",
+       "test1-83-0-img1": "./test1/test1-83-0-img1.png",
+       "test1-11-2-img0": "./test1/test1-11-2-img0.png",
+       ...
+      }
+      ```
+    - image filenames are preserved from the NLVR2 dataset.
+ - `img_feat_<...>`
+    - A folder containing a certain type of pre-extracted image features, each file saves the feature of one image.
+    - Filename is generated as such:
+      ```python
+      "test1-147-1-img1.png".replace('.png','.pkl')
+      ```
+      i.e., `test1-147-1-img1.pkl`, so that it can be directly indexed by the `image_splits` json files.
 
 ## Test-split Evaluation Server
 We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted at: [https://cirr.cecs.anu.edu.au/](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
