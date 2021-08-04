@@ -2,10 +2,12 @@
 
 We expand the task of composed image retrieval by introducing the **C**omposed **I**mage **R**etrieval on **R**eal-life images (CIRR) dataset - the first dataset of open-domain, real-life images with human-generated modification sentences.
 
+![Demo image from the dataset](demo_imgs/project_page_demo_img_0.png)
+
 Concurrently, we release the code for our baseline method **C**omposed **I**mage **R**etrieval using **P**retrained **LAN**guage **T**ransformers (CIRPLANT).
 
 ----
-You are corrently viewing the [Project homepage](https://cuberick-orion.github.io/CIRR/).
+You are currently viewing the [Project homepage](https://cuberick-orion.github.io/CIRR/).
 
 
 ## CIRR Dataset
@@ -14,7 +16,11 @@ You are corrently viewing the [Project homepage](https://cuberick-orion.github.i
 
 ### Test-split Evaluation Server
 
+## CIRPLANT Model
 
+
+## News
+ - Aug. 2021: We are releasing our dataset and code for the project.
 
 ## Licensing
 
@@ -36,4 +42,4 @@ Please cite our paper if it helps your research:
 
 ## Contact
 
-If you have any question regarding our dataset, model or publication, please creat an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR), or email zheyuan.liu@anu.edu.au.
+If you have any question regarding our dataset, model or publication, please creat an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
