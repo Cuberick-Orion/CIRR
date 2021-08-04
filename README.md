@@ -6,8 +6,7 @@ For details please see our [ICCV 2021 paper](#) - Image Retrieval on Real-life I
 
 If you find this repository useful, we would be grateful if you give us a star.
 
-<sub>You are currently viewing the [dataset repository](https://github.com/Cuberick-Orion/CIRR).</sub>
-
-<sub>For the CIRPLAND model in our paper, please see [this repository](#). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).</sub>
+-----
+>You are currently viewing the [dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
 
 
