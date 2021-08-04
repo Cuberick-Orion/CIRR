@@ -37,7 +37,7 @@ To encourage continuing research in this task, we additionally provide an implem
 
 ## Licensing
 
- - We have licensed the annotations of CIRR under the MIT License. Please refer to the LICENSE file for details.
+ - We have licensed the code and annotations of CIRR under the MIT License. Please refer to the LICENSE file for details.
 
  - Following [NLVR2 Licensing](https://github.com/lil-lab/nlvr#licensing), we do not license the images used in CIRR, as we do not hold the copyright to them.
 
