@@ -38,17 +38,17 @@ The downloaded dataset should look like this:
 data
 └─── cirr
      ├─── captions
-     │        cap.<VER>.test1.json
-     │        cap.<VER>.train.json
-     │        cap.<VER>.val.json
+     │        cap.VER.test1.json
+     │        cap.VER.train.json
+     │        cap.VER.val.json
      ├─── captions_ext
-     │        cap.ext.<VER>.test1.json
-     │        cap.ext.<VER>.train.json
-     │        cap.ext.<VER>.val.json
+     │        cap.ext.VER.test1.json
+     │        cap.ext.VER.train.json
+     │        cap.ext.VER.val.json
      ├─── image_splits
-     │        split.<VER>.test1.json
-     │        split.<VER>.train.json
-     │        split.<VER>.val.json
+     │        split.VER.test1.json
+     │        split.VER.train.json
+     │        split.VER.val.json
      ├─── img_feat_frcnn_filtered
      │        <IMG0_ID>.pkl
      │        <IMG1_ID>.pkl
@@ -63,9 +63,29 @@ data
                   ...     
 ```
 
-where, `<VER>` is the dataset version, `img_feat` folders contain different types of feature.
+where, `VER` is the dataset version, `img_feat` folders contain different types of feature.
 
-## Dataset Description
+## Dataset File Description
+
+ - `captions/cap.VER.SPLIT.json`
+    - A list of elements, where each element contains core information on a query-target pair, example:
+    ```json
+    {"pairid": 12063, 
+     "reference": "test1-147-1-img1", 
+     "target_hard": "test1-83-0-img1", 
+     "target_soft": {"test1-83-0-img1": 1.0}, 
+     "caption": "remove all but one dog and add a woman hugging it", 
+     "img_set": {"id": 1, 
+                 "members": ["test1-147-1-img1", 
+                             "test1-1001-2-img0",  
+                             "test1-83-1-img1",           
+                             "test1-359-0-img1",  
+                             "test1-906-0-img1", 
+                             "test1-83-0-img1"],
+                 "reference_rank": 3, 
+                 "target_rank": 4}
+    }
+    ```
 
 ## Test-split Evaluation Server
 We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted at: [https://cirr.cecs.anu.edu.au/](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
