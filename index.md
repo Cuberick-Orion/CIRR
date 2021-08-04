@@ -14,11 +14,11 @@ Read more in our [published paper](#).
 
 ## CIRR Dataset
 
-### Download
+<!-- ### Download -->
 
 Please visit our [repository](https://github.com/Cuberick-Orion/CIRR) to download the CIRR dataset. Details are in the README file.
 
-### Test-split Evaluation Server
+<!-- ### Test-split Evaluation Server -->
 
 We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted at: [https://cirr.cecs.anu.edu.au/](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
@@ -40,8 +40,6 @@ To encourage continuing research in this task, we additionally provide an implem
  - We have licensed the code and annotations of CIRR under the MIT License. Please refer to the LICENSE file for details.
 
  - Following [NLVR2 Licensing](https://github.com/lil-lab/nlvr#licensing), we do not license the images used in CIRR, as we do not hold the copyright to them.
-
-## Terms of Service
 
  - The images used in CIRR are sourced from the [NLVR2 dataset](https://lil.nlp.cornell.edu/nlvr/). Users shall be bounded by its Terms of Service.
  
