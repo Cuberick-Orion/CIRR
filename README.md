@@ -49,15 +49,19 @@ data
      │        split.VER.test1.json
      │        split.VER.train.json
      │        split.VER.val.json
-     ├─── img_feat_frcnn_filtered
+     ├─── img_feat_frcnn  <-[RCNN regional features]
      │        <IMG0_ID>.pkl
      │        <IMG1_ID>.pkl
      │            ...
-     ├─── img_feat_res152
+     ├─── img_feat_res152 <-[ResNet 152 features]
      │        <IMG0_ID>.pkl
      │        <IMG1_ID>.pkl
      │            ...
-     └─── img_raw
+     ├─── img_raw         <-[Optional, raw images]
+     │        <IMG0_ID>.pkl
+     │        <IMG1_ID>.pkl
+     │            ...     
+     └─── img_feat_<...>  <-[Some other types of features]
               <IMG0_ID>.pkl
               <IMG1_ID>.pkl
                   ...     
