@@ -22,6 +22,17 @@ The `data` folder structure is described [below](#dataset-file-structure), you c
 
 ### Pre-extracted Image Features
 
+The available types of image features are:
+ - ImageNet pre-trained ResNet152 features
+   - can be extracted from raw images using [provided scripts](#)
+   - [download our extracted in `zip`](#)
+ - F-RCNN image regional features
+   - provided by OSCAR as we source our images from NLVR2
+   - [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
+   - [download the subset of features used in CIRR](#) (re-zipped by us)
+
+We will add more features in the future.
+
 ### Raw Images
 
 Training and testing on CIRR does not require the raw images. However, should you prefer to acces them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
