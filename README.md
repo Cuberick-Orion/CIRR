@@ -27,11 +27,11 @@ The `data/cirr` folder contains all relevant annotations. File structure is desc
 The available types of image features are:
  - ImageNet pre-trained ResNet152 features
    - can be extracted from raw images using provided scripts
-   - we recommand [downloading our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
+   - we recommend [downloading our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
  - F-RCNN image regional features
    - provided by OSCAR as we source our images from NLVR2
    - [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
-   - we recommand [downloading the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
+   - we recommend [downloading the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
 
 Each `zip` file we provide contains a folder of individual image feature files `.pkl`.
 
@@ -39,9 +39,9 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
 
 ### Raw Images
 
-Training and testing on CIRR does not require the raw images. However, should you want to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
+Training and testing on CIRR do not require raw images. However, should you want to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
 
-**Note**: we do not recommend downloading the images by URLs ([provided here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images)), as it contains too many broken links. Instead, we suggest to follow the [instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
+**Note**: We do not recommend downloading the images by URLs ([provided here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images)), as it contains too many broken links. Instead, we suggest following the [instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
 
 >To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
@@ -83,7 +83,7 @@ data
               <Same subfolders as above>
 ```
 
-where, `VER` is the dataset version.
+where `VER` is the dataset version.
 
 ## Dataset File Description
 
@@ -106,7 +106,7 @@ where, `VER` is the dataset version.
                    "target_rank": 4}
       }
       ```
-    - Details on each entry can be found in the **supp. mat. Sec.G** of our paper.
+    - Details on each entry can be found in the **supp. mat. Sec. G** of our paper.
 
  - `captions_ext/cap.ext.VER.SPLIT.json`
     - A list of elements, where each element contains auxiliary annotations on a query-target pair, example:
@@ -120,7 +120,7 @@ where, `VER` is the dataset version.
                          "3": "background should contain grass"}
       }
       ```
-    - Details on the auxiliary annotations can be found in the **supp. mat. Sec.C** of our paper.
+    - Details on the auxiliary annotations can be found in the **supp. mat. Sec. C** of our paper.
 
  - `image_splits/split.VER.SPLIT.json`
     - A dictionary, where each key:value pair maps an image filename to the relative path of the img file, example:
@@ -137,7 +137,7 @@ where, `VER` is the dataset version.
       in this case, `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
-We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.
