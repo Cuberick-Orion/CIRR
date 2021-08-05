@@ -10,6 +10,8 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ## Download CIRR Dataset
 
+Our dataset is structured in a similar way as the existing dataset [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq) on this task.
+
 ### Annotations
 
 Directly download by zip, or clone this repository's `data` branch to local by:
