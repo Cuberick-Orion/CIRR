@@ -29,7 +29,7 @@ The `data/cirr` folder contains all relevant annotations. File structure is desc
 
 The available types of image features are:
  - ImageNet pre-trained ResNet152 features
-   - can be extracted from raw images using provided scripts
+   - can be extracted from raw images
    - we recommend [downloading our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
  - F-RCNN image regional features
    - provided by OSCAR as we source our images from NLVR2
