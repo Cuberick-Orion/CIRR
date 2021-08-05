@@ -105,13 +105,9 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
     - Details on the auxiliary annotations can be found in the **supp. mat. Sec.C** of our paper.
 
  - `image_splits/split.VER.SPLIT.json`
-    - A list of elements, where each element maps an image filename to the relative path of the img file, example:
+    - A dictionary, where each key:value pair maps an image filename to the relative path of the img file, example:
       ```json
-      {"test1-147-1-img1": "./test1/test1-147-1-img1.png",
-       "test1-83-0-img1": "./test1/test1-83-0-img1.png",
-       "test1-11-2-img0": "./test1/test1-11-2-img0.png",
-       ...
-      }
+      "test1-147-1-img1": "./test1/test1-147-1-img1.png",
       ```
     - image filenames are preserved from the NLVR2 dataset.
  - `img_feat_<...>/`
