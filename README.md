@@ -6,7 +6,7 @@ For details please see our [ICCV 2021 paper](#) - **Image Retrieval on Real-life
 If you find this repository useful, we would appreciate it if you give us a star.
 
 -----
->You are currently viewing the [dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [project homepage](https://cuberick-orion.github.io/CIRR/).
+>You are currently viewing the [Dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
 
 ## Download CIRR Dataset
 
@@ -61,10 +61,8 @@ data
      │        <IMG0_ID>.pkl
      │        <IMG1_ID>.pkl
      │            ...     
-     └─── img_feat_<...>  <-[Some other types of features]
-              <IMG0_ID>.pkl
-              <IMG1_ID>.pkl
-                  ...     
+     ├─── img_feat_<...>  
+     └─── ...             <-[Some other type of features]
 ```
 
 where, `VER` is the dataset version, `img_feat` folders contain different types of feature.
@@ -90,7 +88,7 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
                    "target_rank": 4}
       }
       ```
-    - Details on each entry can be found in the supp. mat. Sec.G of our paper.
+    - Details on each entry can be found in the **supp. mat. Sec.G** of our paper.
 
  - `captions_ext/cap.ext.VER.SPLIT.json`
     - A list of elements, where each element contains auxiliary annotations on a query-target pair, example:
@@ -104,7 +102,7 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
                          "3": "background should contain grass"}
       }
       ```
-    - Details on the auxiliary annotations can be found in the supp. mat. Sec.C of our paper.
+    - Details on the auxiliary annotations can be found in the **supp. mat. Sec.C** of our paper.
 
  - `image_splits/split.VER.SPLIT.json`
     - A list of elements, where each element maps an image filename to the relative path of the img file, example:
