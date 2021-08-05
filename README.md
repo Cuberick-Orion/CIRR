@@ -62,17 +62,22 @@ data
      │        split.VER.train.json
      │        split.VER.val.json
      ├─── img_feat_frcnn  <-[RCNN regional features]
-     │        <IMG0_ID>.pkl
-     │        <IMG1_ID>.pkl
-     │            ...
+     │    │
+     │    ├── train       <-[train-split]
+     │    │      <IMG0_ID>.pkl
+     │    │      <IMG1_ID>.pkl
+     │    │           ...
+     │    ├── dev         <-[val-split]
+     │    │      <IMG0_ID>.pkl
+     │    │      <IMG1_ID>.pkl
+     │    │           ...
+     │    └── test1       <-[test-split]
+     │           <IMG0_ID>.pkl
+     │           <IMG1_ID>.pkl
+     │                ...
+     │
      ├─── img_feat_res152 <-[ResNet 152 features]
-     │        <IMG0_ID>.pkl
-     │        <IMG1_ID>.pkl
-     │            ...
      ├─── img_raw         <-[Optional, raw images]
-     │        <IMG0_ID>.pkl
-     │        <IMG1_ID>.pkl
-     │            ...     
      ├─── img_feat_<...>  
      └─── ...             <-[Some other type of features]
 ```
