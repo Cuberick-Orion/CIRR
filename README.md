@@ -14,9 +14,12 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ### Annotations
 
-Clone the `data` branch to local with:
+First create a `data` folder to your desired location, then clone the `data` branch to local with:
 
 ```bash
+mkdir data
+cd data
+
 git clone -b data git@github.com:Cuberick-Orion/CIRR.git
 ```
 
