@@ -20,7 +20,7 @@ Please visit our [repository](https://github.com/Cuberick-Orion/CIRR) to downloa
 
 <!-- ### Test-split Evaluation Server -->
 
-We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted at: [https://cirr.cecs.anu.edu.au/](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
 Note, the ground-truth for the validation-split is available as usual, and can be used for development.
 

@@ -10,35 +10,36 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ## Download CIRR Dataset
 
-> Our dataset is structured in a similar way as the existing dataset [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq) on this task.
+> Our dataset is structured in a similar way as [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq), an existing dataset on this task.
 
 ### Annotations
 
-Directly download by zip, or clone this repository's `data` branch to local by:
+Clone the `data` branch to local with:
 
 ```bash
 git clone -b data git@github.com:Cuberick-Orion/CIRR.git
 ```
 
-The `data` folder structure is described [below](#dataset-file-structure), you can find all relevant annotations in the `.json` files.
+The `data/cirr` folder contains all relevant annotations. File structure is described [below](#dataset-file-structure).
 
 ### Pre-extracted Image Features
 
 The available types of image features are:
  - ImageNet pre-trained ResNet152 features
    - can be extracted from raw images using provided scripts
-   -  [download our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
+   - we recommand [downloading our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
  - F-RCNN image regional features
    - provided by OSCAR as we source our images from NLVR2
    - [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
-   -  [download the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
+   - we recommand [downloading the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
 
-The `zip` files we provide contains a folder of individual image feature files `.pkl`.
+Each `zip` file we provide contains a folder of individual image feature files `.pkl`.
+
 Once downloaded, unzip it into `data/cirr/`, following the file structure [below](#dataset-file-structure).
 
 ### Raw Images
 
-Training and testing on CIRR does not require the raw images. However, should you prefer to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
+Training and testing on CIRR does not require the raw images. However, should you want to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
 
 **Note**: we do not recommend downloading the images by URLs ([provided here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images)), as it contains too many broken links. Instead, we suggest to follow the [instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
 
@@ -63,28 +64,26 @@ data
      │        split.VER.test1.json
      │        split.VER.train.json
      │        split.VER.val.json
-     ├─── img_feat_frcnn  <-[RCNN regional features]
-     │    │
-     │    ├── train       <-[train-split]
+     ├─── img_feat_frcnn  
+     │    ├── train      
      │    │      <IMG0_ID>.pkl
      │    │      <IMG1_ID>.pkl
      │    │           ...
-     │    ├── dev         <-[val-split]
+     │    ├── dev         
      │    │      <IMG0_ID>.pkl
      │    │      <IMG1_ID>.pkl
      │    │           ...
-     │    └── test1       <-[test-split]
+     │    └── test1       
      │           <IMG0_ID>.pkl
      │           <IMG1_ID>.pkl
      │                ...
-     │
-     ├─── img_feat_res152 <-[ResNet 152 features]
-     ├─── img_raw         <-[Optional, raw images]
-     ├─── img_feat_<...>  
-     └─── ...             <-[Some other type of features]
+     ├─── img_feat_res152 
+     │        <Same subfolders as above>
+     └─── img_raw         
+              <Same subfolders as above>
 ```
 
-where, `VER` is the dataset version, `img_feat` folders contain different types of feature.
+where, `VER` is the dataset version.
 
 ## Dataset File Description
 
@@ -135,10 +134,10 @@ where, `VER` is the dataset version, `img_feat` folders contain different types 
       ```python
       <IMG0_ID> = "test1-147-1-img1.png".replace('.png','.pkl')
       ```
-      i.e., `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
+      in this case, `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
-We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted at: [https://cirr.cecs.anu.edu.au/](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.
