@@ -12,10 +12,10 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ### Annotations
 
-Directly download by zip, or clone this repository to local by:
+Directly download by zip, or clone this repository's `data` branch to local by:
 
 ```bash
-git clone git@github.com:Cuberick-Orion/CIRR.git
+git clone -b data git@github.com:Cuberick-Orion/CIRR.git
 ```
 
 The `data` folder structure is described [below](#dataset-file-structure), you can find all relevant annotations in the `.json` files.
