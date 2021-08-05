@@ -14,13 +14,13 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ### Annotations
 
-First create a `data` folder to your desired location, then clone the `data` branch to local with:
+First create a `data` folder to your desired location, then clone the `data` branch to local `data/cirr` folder:
 
 ```bash
 mkdir data
 cd data
 
-git clone -b data git@github.com:Cuberick-Orion/CIRR.git
+git clone -b data git@github.com:Cuberick-Orion/CIRR.git cirr
 ```
 
 The `data/cirr` folder contains all relevant annotations. File structure is described [below](#dataset-file-structure).
