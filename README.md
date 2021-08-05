@@ -31,11 +31,12 @@ The available types of image features are:
    - [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
    - [download the subset of features used in CIRR](#) (re-zipped by us)
 
-We will add more features in the future.
+The `zip` files we provide contains a folder of individual image feature files `.pkl`.
+Once downloaded, unzip it into `data/cirr/`, following the file structure [below](#dataset-file-structure).
 
 ### Raw Images
 
-Training and testing on CIRR does not require the raw images. However, should you prefer to acces them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
+Training and testing on CIRR does not require the raw images. However, should you prefer to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
 
 **Note**: we do not recommend downloading the images by URLs ([provided here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images)), as it contains too many broken links. Instead, we suggest to follow the [instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
 
