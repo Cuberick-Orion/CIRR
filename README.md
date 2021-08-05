@@ -10,7 +10,7 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ## Download CIRR Dataset
 
-Our dataset is structured in a similar way as the existing dataset [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq) on this task.
+> Our dataset is structured in a similar way as the existing dataset [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq) on this task.
 
 ### Annotations
 
@@ -26,12 +26,12 @@ The `data` folder structure is described [below](#dataset-file-structure), you c
 
 The available types of image features are:
  - ImageNet pre-trained ResNet152 features
-   - can be extracted from raw images using [provided scripts](#)
-   - [download our extracted in `zip`](#)
+   - can be extracted from raw images using provided scripts
+   - [download our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
  - F-RCNN image regional features
    - provided by OSCAR as we source our images from NLVR2
    - [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
-   - [download the subset of features used in CIRR](#) (re-zipped by us)
+   - [download the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
 
 The `zip` files we provide contains a folder of individual image feature files `.pkl`.
 Once downloaded, unzip it into `data/cirr/`, following the file structure [below](#dataset-file-structure).
