@@ -3,10 +3,12 @@ This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-li
 
 For details please see our [ICCV 2021 paper](#) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
 
-If you find this repository useful, we would appreciate it if you give us a star.
+If you find this repository useful, we would appreciate it if you could give us a star.
 
 -----
 >You are currently viewing the [Dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
+-----
+>If you wish to develop on this task using our codebase, we recommend first checking out our [Code repository](https://github.com/Cuberick-Orion/CIRPLANT), setting up the code locally, then downloading the dataset.
 
 ## Download CIRR Dataset
 
@@ -14,13 +16,13 @@ If you find this repository useful, we would appreciate it if you give us a star
 
 ### Annotations
 
-First create a `data` folder to your desired location, then clone the `data` branch to local `data/cirr` folder:
+First create a `data` folder at your desired location, then clone the `data` branch to local `data/cirr` folder:
 
 ```bash
 mkdir data
 cd data
 
-git clone -b data git@github.com:Cuberick-Orion/CIRR.git cirr
+git clone -b cirr_dataset git@github.com:Cuberick-Orion/CIRR.git cirr
 ```
 
 The `data/cirr` folder contains all relevant annotations. File structure is described [below](#dataset-file-structure).
