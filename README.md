@@ -16,7 +16,7 @@ If you find this repository useful, we would appreciate it if you could give us 
 
 ### Annotations
 
-First create a `data` folder at your desired location, then clone the `data` branch to local `data/cirr` folder:
+First, create a `data` folder at your desired location, then clone the `data` branch to the local `data/cirr` folder:
 
 ```bash
 mkdir data
@@ -159,4 +159,4 @@ Please cite our paper if it helps your research:
 ```
 
 ## Contact
-If you have any question regarding our dataset, model or publication, please creat an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
+If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).

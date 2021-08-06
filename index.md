@@ -20,17 +20,17 @@ Please visit our [repository](https://github.com/Cuberick-Orion/CIRR) to downloa
 
 <!-- ### Test-split Evaluation Server -->
 
-We do not publish the ground-truth for the test-split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
-Note, the ground-truth for the validation-split is available as usual, and can be used for development.
+Note, the ground truth for the validation split is available as usual and can be used for development.
 
 ## CIRPLANT Model
 
-The model is hosted in this [separate repository](#). Please refer to the README file for details.
+The model is hosted in this [separate repository](https://github.com/Cuberick-Orion/CIRPLANT). Please refer to the README file for details.
 
 Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightning](https://www.pytorchlightning.ai/). 
 
-To encourage continuing research in this task, we additionally provide an implementation of [TIRG](https://github.com/google/tirg) that is compatible with our code base.
+To encourage continuing research in this task, we additionally provide an implementation of [TIRG](https://github.com/google/tirg) that is compatible with our codebase.
 
 ## News
  - **Aug. 2021**: We are releasing our dataset and code for the project. Evaluation server coming soon!
@@ -53,4 +53,4 @@ Please cite our paper if it helps your research:
 
 ## Contact
 
-If you have any question regarding our dataset, model or publication, please creat an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
+If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
