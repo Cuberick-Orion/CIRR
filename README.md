@@ -144,6 +144,8 @@ where `VER` is the dataset version.
 ## Test-split Evaluation Server
 We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
+Instructions can be found [here](Test-split_server.md).
+
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.
 
