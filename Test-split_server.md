@@ -27,7 +27,8 @@ Please follow the following template to generate the `.json` file.
     ],
    ```
    - Here, `12063` is the unique `pair_id`, you shall find it in our dataset annotation entries (check out either one of the    `captions/cap.VER.SPLIT.json` files).
-   - The list of candidates is your model's prediction. To limit the file size, please select the top-50 predictions for each entry.
+   - The list of candidates is your model's prediction. 
+   - To limit the file size, please select the top-50 predictions for each entry.
  - **Important** A special entry shall be added to the file, indicating the version of the CIRR dataset used - in case of future changes made to the testing procedures.
    - e.g., `"version": "rc2"`
 
