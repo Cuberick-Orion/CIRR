@@ -157,3 +157,6 @@ Please cite our paper if it helps your research:
 ```
 # TODO
 ```
+
+## Contact
+If you have any question regarding our dataset, model or publication, please creat an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
