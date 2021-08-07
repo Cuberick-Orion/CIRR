@@ -16,17 +16,17 @@ Read more in our [published paper](#).
 
 <!-- ### Download -->
 
-Please visit our [repository](https://github.com/Cuberick-Orion/CIRR) to download the CIRR dataset. Details are in the README file.
+[Click to download our dataset](https://github.com/Cuberick-Orion/CIRR).
 
 <!-- ### Test-split Evaluation Server -->
 
-We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, we host an [evaluation server](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
 Note, the ground truth for the validation split is available as usual and can be used for development.
 
 ## CIRPLANT Model
 
-The model is hosted in this [separate repository](https://github.com/Cuberick-Orion/CIRPLANT). Please refer to the README file for details.
+[Click to access our codebase](https://github.com/Cuberick-Orion/CIRPLANT).
 
 Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightning](https://www.pytorchlightning.ai/). 
 

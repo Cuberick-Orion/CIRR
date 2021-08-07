@@ -16,7 +16,7 @@ If you find this repository useful, we would appreciate it if you could give us 
 
 ### Annotations
 
-First, create a `data` folder at your desired location, then clone the `data` branch to the local `data/cirr` folder:
+First, create a `data` folder at your desired location, then clone the `cirr_dataset` branch to the local `data/cirr` folder:
 
 ```bash
 mkdir data
@@ -46,7 +46,7 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
 
 Training and testing on CIRR do not require raw images. However, should you want to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
 
-**Note**: We do not recommend downloading the images by URLs ([provided here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images)), as it contains too many broken links. Instead, we suggest following the [instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
+**Note**: We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
 
 >To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
@@ -144,7 +144,7 @@ where `VER` is the dataset version.
 ## Test-split Evaluation Server
 We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
-Instructions can be found [here](Test-split_server.md).
+[See test-split server instructions](Test-split_server.md).
 
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.

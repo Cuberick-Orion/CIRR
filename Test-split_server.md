@@ -1,6 +1,6 @@
 ## Test-split Server on CIRR Dataset
 
-Our test-split server is hosted individually [here](cirr.cecs.anu.edu.au). It accepts a `.json` file containing the model's predictions and returns results.
+We host an [evaluation server](https://cirr.cecs.anu.edu.au/) individually. It accepts a `.json` file containing the model's predictions and returns results.
 
 >The `.json` file must be generated following our templates, otherwise, it cannot be properly processed.
 
@@ -32,7 +32,7 @@ Please follow the following template to generate the `.json` file.
  - **Important** A special entry shall be added to the file, indicating the version of the CIRR dataset used - in case of future changes made to the testing procedures.
    - e.g., `"version": "rc2"`
 
-An example `.json` file is available [here](demo_files/test.rand.v0.json). You can try to upload it to the server - it shall pass all our sanity checks.
+See [an example `.json` file](demo_files/test.rand.v0.json). You can try to upload it to the server - it shall pass all our sanity checks.
 
 ### Contact
 If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
