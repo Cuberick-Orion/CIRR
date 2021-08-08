@@ -1,6 +1,12 @@
 ## Composed Image Retrieval on Real-life Images
 
-We expand the task of composed image retrieval by introducing the **C**omposed **I**mage **R**etrieval on **R**eal-life images (**CIRR**) dataset - the first dataset of open-domain, real-life images with human-generated modification sentences.
+**Composed Image Retrieval** (or, **Image Retreival conditioned on Language Feedback**) is a relatively new retrieval task, where an input query consists of an image and short textual description of how to modify the image. 
+
+For humans the advantage of a bi-modal query is clear: some concepts and attributes are more succinctly described visually, others through language. By cross-referencing the two modalities, a reference image can capture the general gist of a scene, while the text can specify finer details.
+
+We identify a major challenge of this task as the inherent ambiguity in knowing what information is important (typically one object of interest in the scene) and what can be ignored (e.g., the background and other irrelevant objects).
+
+Here, we extend the task of composed image retrieval by introducing the **C**omposed **I**mage **R**etrieval on **R**eal-life images (**CIRR**) dataset - the first dataset of open-domain, real-life images with human-generated modification sentences.
 
 ![Demo image from CIRR data](demo_imgs/project_page_demo_img_0.png)
 
