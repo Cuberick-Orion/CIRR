@@ -12,7 +12,7 @@ Here, we extend the task of composed image retrieval by introducing the **C**omp
 
 Concurrently, we release the code and pre-trained models for our method **C**omposed **I**mage **R**etrieval using **P**retrained **LAN**guage **T**ransformers (**CIRPLANT**). Together with the dataset, we believe this work will inspire further research on this task on a finer-grain level.
 
-Read more in our [published paper](#).
+Read more in our [published paper](https://arxiv.org/abs/2108.04024).
 
 ----
 <sub>You are currently viewing the [Project homepage](https://cuberick-orion.github.io/CIRR/).</sub>
@@ -53,9 +53,13 @@ Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightni
 ## Citation
 
 Please cite our paper if it helps your research:
-
 ```
-# TODO
+@article{liu2021cirr,
+      title={Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models}, 
+      author={Zheyuan Liu and Cristian Rodriguez-Opazo and Damien Teney and Stephen Gould},
+      journal={arXiv preprint arXiv:2108.04024},
+      year={2021},
+}
 ```
 
 ## Contact

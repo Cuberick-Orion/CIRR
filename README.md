@@ -1,13 +1,13 @@
 ## Composed Image Retrieval on Real-life Images
 This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-life images (**CIRR**) dataset.
 
-For details please see our [ICCV 2021 paper](#) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
+For details please see our [ICCV 2021 paper](https://arxiv.org/abs/2108.04024) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
 
 If you find this repository useful, we would appreciate it if you could give us a star.
 
------
+
 >You are currently viewing the [Dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
------
+
 >If you wish to develop on this task using our codebase, we recommend first checking out our [Code repository](https://github.com/Cuberick-Orion/CIRPLANT), setting up the code locally, then downloading the dataset.
 
 ## Download CIRR Dataset
@@ -16,12 +16,13 @@ If you find this repository useful, we would appreciate it if you could give us 
 
 ### Annotations
 
-First, create a `data` folder at your desired location, then clone the `cirr_dataset` branch to the local `data/cirr` folder:
-
+Obtain the annotations by:
 ```bash
+# create a `data` folder at your desired location
 mkdir data
 cd data
 
+# clone the cirr_dataset branch to the local data/cirr folder
 git clone -b cirr_dataset git@github.com:Cuberick-Orion/CIRR.git cirr
 ```
 
@@ -35,8 +36,8 @@ The available types of image features are:
    - we recommend [downloading our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
  - F-RCNN image regional features
    - provided by OSCAR as we source our images from NLVR2
-   - [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
    - we recommend [downloading the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
+   - alternatively, [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
 
 Each `zip` file we provide contains a folder of individual image feature files `.pkl`.
 
@@ -52,80 +53,92 @@ Training and testing on CIRR do not require raw images. However, should you want
 
 ## Dataset File Structure
 
-The downloaded dataset should look like this:
+<details>
+  <summary>The downloaded dataset should look like this (Click to expand!)</summary>
+  
+  ```
+  data
+  └─── cirr
+      ├─── captions
+      │        cap.VER.test1.json
+      │        cap.VER.train.json
+      │        cap.VER.val.json
+      ├─── captions_ext
+      │        cap.ext.VER.test1.json
+      │        cap.ext.VER.train.json
+      │        cap.ext.VER.val.json
+      ├─── image_splits
+      │        split.VER.test1.json
+      │        split.VER.train.json
+      │        split.VER.val.json
+      ├─── img_feat_frcnn  
+      │    ├── train      
+      │    │      <IMG0_ID>.pkl
+      │    │      <IMG1_ID>.pkl
+      │    │           ...
+      │    ├── dev         
+      │    │      <IMG0_ID>.pkl
+      │    │      <IMG1_ID>.pkl
+      │    │           ...
+      │    └── test1       
+      │           <IMG0_ID>.pkl
+      │           <IMG1_ID>.pkl
+      │                ...
+      ├─── img_feat_res152 
+      │        <Same subfolders as above>
+      └─── img_raw         
+                <Same subfolders as above>
+  ```
+</details>
 
-```
-data
-└─── cirr
-     ├─── captions
-     │        cap.VER.test1.json
-     │        cap.VER.train.json
-     │        cap.VER.val.json
-     ├─── captions_ext
-     │        cap.ext.VER.test1.json
-     │        cap.ext.VER.train.json
-     │        cap.ext.VER.val.json
-     ├─── image_splits
-     │        split.VER.test1.json
-     │        split.VER.train.json
-     │        split.VER.val.json
-     ├─── img_feat_frcnn  
-     │    ├── train      
-     │    │      <IMG0_ID>.pkl
-     │    │      <IMG1_ID>.pkl
-     │    │           ...
-     │    ├── dev         
-     │    │      <IMG0_ID>.pkl
-     │    │      <IMG1_ID>.pkl
-     │    │           ...
-     │    └── test1       
-     │           <IMG0_ID>.pkl
-     │           <IMG1_ID>.pkl
-     │                ...
-     ├─── img_feat_res152 
-     │        <Same subfolders as above>
-     └─── img_raw         
-              <Same subfolders as above>
-```
-
-where `VER` is the dataset version.
 
 ## Dataset File Description
 
  - `captions/cap.VER.SPLIT.json`
-    - A list of elements, where each element contains core information on a query-target pair, example:
-      ```json
-      {"pairid": 12063, 
-       "reference":   "test1-147-1-img1", 
-       "target_hard": "test1-83-0-img1", 
-       "target_soft": {"test1-83-0-img1": 1.0}, 
-       "caption": "remove all but one dog and add a woman hugging   it", 
-       "img_set": {"id": 1, 
-                   "members": ["test1-147-1-img1", 
-                               "test1-1001-2-img0",  
-                               "test1-83-1-img1",           
-                               "test1-359-0-img1",  
-                               "test1-906-0-img1", 
-                               "test1-83-0-img1"],
-                   "reference_rank": 3, 
-                   "target_rank": 4}
-      }
-      ```
+    - A list of elements, where each element contains core information on a query-target pair.
     - Details on each entry can be found in the **supp. mat. Sec. G** of our paper.
+    - <details>
+      <summary>Click to see an example</summary>
+      
+      ```json
+          {"pairid": 12063, 
+          "reference":   "test1-147-1-img1", 
+          "target_hard": "test1-83-0-img1", 
+          "target_soft": {"test1-83-0-img1": 1.0}, 
+          "caption": "remove all but one dog and add a woman hugging   it", 
+          "img_set": {"id": 1, 
+                      "members": ["test1-147-1-img1", 
+                                  "test1-1001-2-img0",  
+                                  "test1-83-1-img1",           
+                                  "test1-359-0-img1",  
+                                  "test1-906-0-img1", 
+                                  "test1-83-0-img1"],
+                      "reference_rank": 3, 
+                      "target_rank": 4}
+          }
+      ```
+      </details>
+
 
  - `captions_ext/cap.ext.VER.SPLIT.json`
-    - A list of elements, where each element contains auxiliary annotations on a query-target pair, example:
-      ```json
-      {"pairid": 12063, 
-      "reference":   "test1-147-1-img1", 
-      "target_hard": "test1-83-0-img1", 
-      "caption_extend": {"0": "being a photo of dogs", 
-                         "1": "add a big dog", 
-                         "2": "more focused on the hugging", 
-                         "3": "background should contain grass"}
-      }
-      ```
+    - A list of elements, where each element contains auxiliary annotations on a query-target pair.
     - Details on the auxiliary annotations can be found in the **supp. mat. Sec. C** of our paper.
+    - <details>
+      <summary>Click to see an example</summary>
+      
+      ```json
+          {"pairid": 12063, 
+          "reference":   "test1-147-1-img1", 
+          "target_hard": "test1-83-0-img1", 
+          "caption_extend": {"0": "being a photo of dogs", 
+                            "1": "add a big dog", 
+                            "2": "more focused on the hugging", 
+                            "3": "background should contain grass"}
+          }
+      ```
+      </details>
+
+  
 
  - `image_splits/split.VER.SPLIT.json`
     - A dictionary, where each key:value pair maps an image filename to the relative path of the img file, example:
@@ -157,7 +170,12 @@ We do not publish the ground truth for the test split of CIRR. Instead, an evalu
 
 Please cite our paper if it helps your research:
 ```
-# TODO
+@article{liu2021cirr,
+      title={Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models}, 
+      author={Zheyuan Liu and Cristian Rodriguez-Opazo and Damien Teney and Stephen Gould},
+      journal={arXiv preprint arXiv:2108.04024},
+      year={2021},
+}
 ```
 
 ## Contact
