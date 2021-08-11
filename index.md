@@ -26,7 +26,7 @@ Read more in our [published paper](https://arxiv.org/abs/2108.04024).
 
 <!-- ### Test-split Evaluation Server -->
 
-We do not publish the ground truth for the test split of CIRR. Instead, we host an [evaluation server](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, we host an [evaluation server](http://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
 Note, the ground truth for the validation split is available as usual and can be used for development.
 

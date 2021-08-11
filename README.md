@@ -155,7 +155,7 @@ Training and testing on CIRR do not require raw images. However, should you want
       in this case, `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
-We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](https://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](http://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
 
 [See test-split server instructions](Test-split_server.md).
 

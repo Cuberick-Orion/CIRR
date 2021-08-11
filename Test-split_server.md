@@ -1,6 +1,6 @@
 ## Test-split Server on CIRR Dataset
 
-We host an [evaluation server](https://cirr.cecs.anu.edu.au/) individually. It accepts a `.json` file containing the model's predictions and returns results.
+We host an [evaluation server](http://cirr.cecs.anu.edu.au/) individually. It accepts a `.json` file containing the model's predictions and returns results.
 
 >The `.json` file must be generated following our templates, otherwise, it cannot be properly processed.
 
