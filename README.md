@@ -10,6 +10,23 @@ If you find this repository useful, we would appreciate it if you could give us 
 
 >If you wish to develop on this task using our codebase, we recommend first checking out our [Code repository](https://github.com/Cuberick-Orion/CIRPLANT), setting up the code locally, then downloading the dataset.
 
+## News and Upcoming Updates
+
+<details>
+  <summary>Click to see news</summary>
+  
+  - **Aug. 2021**: We have opened our test-split evaluation server.
+  - **Aug. 2021**: We are releasing our dataset and code for the project.
+  
+</details>
+
+<details>
+  <summary>Click to see our planned updates</summary>
+  
+  - Test-split server: we will be updating it to include the Recall_Subset evaluation.
+  
+</details>
+
 ## Download CIRR Dataset
 
 > Our dataset is structured in a similar way as [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq), an existing dataset on this task.
@@ -155,7 +172,7 @@ Training and testing on CIRR do not require raw images. However, should you want
       in this case, `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
-We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](http://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](http://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split. The functions of the test-split server will be incrementally updated.
 
 [See test-split server instructions](Test-split_server.md).
 

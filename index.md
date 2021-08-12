@@ -40,7 +40,8 @@ Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightni
 <sub>To encourage continuing research in this task, we will additionally provide an implementation of [TIRG](https://github.com/google/tirg) that is compatible with our codebase (coming soon).</sub>
 
 ## News
- - **Aug. 2021**: We are releasing our dataset and code for the project. Evaluation server coming soon!
+ - **Aug. 2021**: We have opened our test-split evaluation server.
+ - **Aug. 2021**: We are releasing our dataset and code for the project.
 
 ## Licensing
 
