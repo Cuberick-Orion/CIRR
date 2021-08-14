@@ -26,14 +26,14 @@ Please follow the following template to generate the `.json` file.
               ...
     ],
    ```
-   - Here, `12063` is the unique `pair_id`, you shall find it in our dataset annotation entries (check out either one of the    `captions/cap.VER.SPLIT.json` files).
-   - The list of candidates is your model's prediction. 
-   - To limit the file size, please select, for each entry, the top-50 (resp. 3) predictions to evaluate on Recall (resp. Recall_Subset).
+ - Here, `12063` is the unique `pair_id`, you shall find it in our dataset annotation entries (check out either one of the    `captions/cap.VER.SPLIT.json` files).
+ - The list of candidates is your model's prediction. 
+ - To limit the file size, please select, for each entry, the top-50 (resp. 3) predictions to evaluate on Recall (resp. Recall_Subset).
  - **Important** Two special entries shall be added to the file, indicating the version of the CIRR dataset used, and the metric for evaluation.
    - Note that Recall and Recall_Subset require two individual JSON files.
    - e.g., `"version": "rc2", "metric": "recall",`
 
-See example `.json` files on [Recall](demo_files/test.rand.test1_pred_ranks_recall.json) and [Recall_Subset](demo_files/test1_pred_ranks_recall_subset.json). These files were generated on our trained baseline model. You can try to upload them to the server, they shall pass all our sanity checks.
+See example `.json` files on [Recall](demo_files/test1_pred_ranks_recall.json) and [Recall_Subset](demo_files/test1_pred_ranks_recall_subset.json). These files were generated on our trained baseline model. You can try to upload them to the server, they shall pass all our sanity checks.
 
 ### Contact
 If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
