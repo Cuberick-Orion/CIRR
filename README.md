@@ -15,6 +15,7 @@ If you find this repository useful, we would appreciate it if you could give us 
 <details>
   <summary>Click to see news</summary>
   
+  - **Aug. 2021**: We have updated our test-split server to include the Recall_Subset evaluation.
   - **Aug. 2021**: We have opened our test-split evaluation server.
   - **Aug. 2021**: We are releasing our dataset and code for the project.
   
@@ -23,7 +24,7 @@ If you find this repository useful, we would appreciate it if you could give us 
 <details>
   <summary>Click to see our planned updates</summary>
   
-  - Test-split server: we will be updating it to include the Recall_Subset evaluation.
+  - None.
   
 </details>
 
