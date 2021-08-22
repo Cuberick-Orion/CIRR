@@ -48,6 +48,7 @@ These files were generated on our trained baseline model. You can try to upload 
 You shall see the result (here showing Recall@K) as below:
 
 <img src="https://raw.githubusercontent.com/Cuberick-Orion/CIRR/main/demo_imgs/submit_example.png" width="500">
-![Submission_result](demo_imgs/submit_example.png)
+
+
 ## Contact
 If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
