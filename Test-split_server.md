@@ -19,13 +19,14 @@ Please follow the following template to generate the `.json` file.
 <details>
   <summary>The content should be a dictionary, click to see an example key-value pair.</summary>
   
-   ```json
+   ```
     "12063": ["test1-233-3-img1", 
               "test1-969-1-img0", 
               "test1-455-2-img1", 
               "test1-835-3-img0", 
               "test1-238-1-img1",
               ...
+              # list contains:
               # top-50 candidates for recall, or
               # top-3 candidates for recall_subset
     ],
@@ -46,6 +47,7 @@ These files were generated on our trained baseline model. You can try to upload 
 
 You shall see the result (here showing Recall@K) as below:
 
+<img src="https://raw.githubusercontent.com/Cuberick-Orion/CIRR/main/demo_imgs/submit_example.png" width="500">
 ![Submission_result](demo_imgs/submit_example.png)
 ## Contact
 If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
