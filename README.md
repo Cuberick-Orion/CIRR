@@ -24,7 +24,8 @@ If you find this repository useful, we would appreciate it if you could give us 
 <details>
   <summary>Click to see our planned updates</summary>
   
-  - None.
+  - Upload TIRG Implementation in our codebase (hosted individually).
+  
   
 </details>
 
