@@ -15,6 +15,7 @@ If you find this repository useful, we would appreciate it if you could give us 
 <details>
   <summary>Click to see news</summary>
   
+  - **Oct. 2021**: We have uploaded our ICCV video.
   - **Aug. 2021**: We have updated our test-split server to include the Recall_Subset evaluation.
   - **Aug. 2021**: We have opened our test-split evaluation server.
   - **Aug. 2021**: We are releasing our dataset and code for the project.
@@ -188,12 +189,15 @@ We do not publish the ground truth for the test split of CIRR. Instead, an evalu
 ## Citation
 
 Please cite our paper if it helps your research:
-```
-@article{liu2021cirr,
-      title={Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models}, 
-      author={Zheyuan Liu and Cristian Rodriguez-Opazo and Damien Teney and Stephen Gould},
-      journal={arXiv preprint arXiv:2108.04024},
-      year={2021},
+```bibtex
+@inproceedings{Liu:ICCV2021,
+  author    = {Zheyuan Liu and
+               Cristian Rodriguez and
+               Damien Teney and
+               Stephen Gould},
+  title     = {Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models},
+  booktitle = {ICCV},
+  year      = {2021}
 }
 ```
 
