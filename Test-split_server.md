@@ -1,12 +1,12 @@
 # Test-split Server on CIRR Dataset
 
-We host an [evaluation server](http://cirr.cecs.anu.edu.au/) individually. It accepts a `.json` file containing the model's predictions and returns results.
+We host an [evaluation server](http://cirr.cecs.anu.edu.au/) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
 
 >The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
 
 >We do not save your information, nor your uploaded files to the server. 
 
->Nevertheless, please follow our instructions and DO NOT upload any file containing sensitive information. We are not responsible for any related incidents.
+>Nevertheless, please DO NOT upload any file containing sensitive information. We are not responsible for any related incidents.
 
 ## Generating the Prediction Files for Upload
 
@@ -32,11 +32,11 @@ Please follow the following template to generate the `.json` file.
     ],
    ```
 
- - Here, `12063` is the unique `pair_id`, you shall find it in our dataset annotation entries (check out either one of the    `captions/cap.VER.SPLIT.json` files).
- - The list of candidates is your model's prediction. 
+ - Here, `12063` is the unique `pair_id` for a query, you shall find it in our dataset annotation entries (check out either one of the    `captions/cap.VER.SPLIT.json` files).
+ - The list of candidates is your model's prediction associated with that particular query. 
  - **Important!** Two special entries shall be added to the file, indicating **(1)** the version of the CIRR dataset used, and **(2)** the metric for evaluation.
    - dataset version: e.g., `"version": "rc2"`
-   - metric: either `"metric": "recall"` or "metric": "recall_subset"
+   - metric: either `"metric": "recall"` or `"metric": "recall_subset"`
  - To limit the file size (Maximum 5MB), please select, for each entry, the top-50 (resp. 3) predictions to evaluate on Recall (resp. Recall_Subset).
 </details>
 
@@ -45,7 +45,7 @@ See example `.json` files on [Recall](demo_files/test1_pred_ranks_recall.json) a
 
 These files were generated on our trained baseline model. You can try to upload them to the server, they shall pass all our sanity checks.
 
-You shall see the result (here showing Recall@K) as below:
+You shall see the result (here showing Recall@K, Recall_subset@K will be similar) as below:
 
 <img src="https://raw.githubusercontent.com/Cuberick-Orion/CIRR/main/demo_imgs/submit_example.png" width="500">
 
