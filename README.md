@@ -12,6 +12,8 @@ If you find this repository useful, we would appreciate it if you could give us 
 
 ## News and Upcoming Updates
 
+>**Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.**
+
 <details>
   <summary>Click to see news</summary>
   
