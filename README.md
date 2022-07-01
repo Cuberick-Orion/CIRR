@@ -1,4 +1,8 @@
 ## Composed Image Retrieval on Real-life Images
+
+[![arXiv](https://img.shields.io/badge/paper-iccv2021-cyan)](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.pdf) 
+[![arXiv](https://img.shields.io/badge/arXiv-2108.04024-red)](https://arxiv.org/abs/2108.04024)
+
 This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-life images (**CIRR**) dataset.
 
 For details please see our [ICCV 2021 paper](https://arxiv.org/abs/2108.04024) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
