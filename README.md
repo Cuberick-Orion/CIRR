@@ -185,6 +185,8 @@ We do not publish the ground truth for the test split of CIRR. Instead, an evalu
 
 [See test-split server instructions](Test-split_server.md).
 
+The server is hosted independently at CECS ANU, so please [email us](mailto:zheyuan.liu@anu.edu.au) if the site is down.
+
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.
 
