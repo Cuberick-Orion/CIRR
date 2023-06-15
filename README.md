@@ -16,25 +16,8 @@ If you find this repository useful, we would appreciate it if you could give us 
 
 ## News and Upcoming Updates
 
->**Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.**
+* Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.
 
-<details>
-  <summary>Click to see news</summary>
-  
-  - **Oct. 2021**: We have uploaded our ICCV video.
-  - **Aug. 2021**: We have updated our test-split server to include the Recall_Subset evaluation.
-  - **Aug. 2021**: We have opened our test-split evaluation server.
-  - **Aug. 2021**: We are releasing our dataset and code for the project.
-  
-</details>
-
-<details>
-  <summary>Click to see our planned updates</summary>
-  
-  - Upload TIRG Implementation in our codebase (hosted individually).
-  
-  
-</details>
 
 ## Download CIRR Dataset
 
@@ -52,7 +35,20 @@ cd data
 git clone -b cirr_dataset git@github.com:Cuberick-Orion/CIRR.git cirr
 ```
 
-The `data/cirr` folder contains all relevant annotations. File structure is described [below](#dataset-file-structure).
+The `data/cirr` folder contains all relevant annotations. The file structure is described [below](#dataset-file-structure).
+
+### Raw Images
+
+*Updated June 2023*
+
+Recent methods of Composed Image Retrieval (and related tasks) often use raw images rather than our pre-extracted features. Though, we are not at liberty to distribute these images.
+If you'd like to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
+
+**Note**: We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
+
+>To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
+
+You can also [email us](mailto:zheyuan.liu@anu.edu.au) if, for any reason, you receive no response from the NLVR2 group.
 
 ### Pre-extracted Image Features
 
@@ -69,18 +65,10 @@ Each `zip` file we provide contains a folder of individual image feature files `
 
 Once downloaded, unzip it into `data/cirr/`, following the file structure [below](#dataset-file-structure).
 
-### Raw Images
-
-Training and testing on CIRR do not require raw images. However, should you want to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
-
-**Note**: We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
-
->To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
-
 ## Dataset File Structure
 
 <details>
-  <summary>The downloaded dataset should look like this (Click to expand!)</summary>
+  <summary>The downloaded dataset should look like this (click to expand)</summary>
   
   ```
   data
@@ -210,4 +198,4 @@ Please cite our paper if it helps your research:
 ```
 
 ## Contact
-If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
+If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or [email us](mailto:zheyuan.liu@anu.edu.au).
