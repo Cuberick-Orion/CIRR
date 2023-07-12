@@ -87,25 +87,25 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       │        split.VER.val.json
       ├─── img_raw  
       │    ├── train
-      │    │   ├── 0 # sub-level folder structure inherited from NLVR2 (carries no special meaning in CIRR)
-      │    │   │    <IMG0_ID>.pkl
-      │    │   │    <IMG0_ID>.pkl
-      │    │   │         ...
-      │    │   ├── 1
-      │    │   │    <IMG0_ID>.pkl
-      │    │   │    <IMG0_ID>.pkl
-      │    │   │         ...
-      │    │   ├── 2
-      │    │   │    <IMG0_ID>.pkl
-      │    │   │    <IMG0_ID>.pkl
-      │    │   └──       ...
+      │    │    ├── 0 # sub-level folder structure inherited from NLVR2 (carries no special meaning in CIRR)
+      │    │    │    <IMG0_ID>.png
+      │    │    │    <IMG0_ID>.png
+      │    │    │         ...
+      │    │    ├── 1
+      │    │    │    <IMG0_ID>.png
+      │    │    │    <IMG0_ID>.png
+      │    │    │         ...
+      │    │    ├── 2
+      │    │    │    <IMG0_ID>.png
+      │    │    │    <IMG0_ID>.png
+      │    │    └──       ...
       │    ├── dev         
-      │    │      <IMG0_ID>.pkl
-      │    │      <IMG1_ID>.pkl
+      │    │      <IMG0_ID>.png
+      │    │      <IMG1_ID>.png
       │    │           ...
       │    └── test1       
-      │           <IMG0_ID>.pkl
-      │           <IMG1_ID>.pkl
+      │           <IMG0_ID>.png
+      │           <IMG1_ID>.png
       │                ...
       ├─── img_feat_res152 
       │        <Same subfolder structure as above>
@@ -167,6 +167,8 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
     - A dictionary, where each key:value pair maps an image filename to the relative path of the img file, example:
       ```json
       "test1-147-1-img1": "./test1/test1-147-1-img1.png",
+      # or
+      "train-11041-2-img0": "./train/34/train-11041-2-img0.png"
       ```
     - image filenames and (train-split) sub-folder structures are preserved from the NLVR2 dataset.
  - `img_feat_<...>/`
