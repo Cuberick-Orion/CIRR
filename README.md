@@ -85,11 +85,20 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       │        split.VER.test1.json
       │        split.VER.train.json
       │        split.VER.val.json
-      ├─── img_feat_frcnn  
-      │    ├── train      
-      │    │      <IMG0_ID>.pkl
-      │    │      <IMG1_ID>.pkl
-      │    │           ...
+      ├─── img_raw  
+      │    ├── train
+      │    │   ├── 0 # sub-level folder structure inherited from NLVR2 (carries no special meaning in CIRR)
+      │    │   │    <IMG0_ID>.pkl
+      │    │   │    <IMG0_ID>.pkl
+      │    │   │         ...
+      │    │   ├── 1
+      │    │   │    <IMG0_ID>.pkl
+      │    │   │    <IMG0_ID>.pkl
+      │    │   │         ...
+      │    │   ├── 2
+      │    │   │    <IMG0_ID>.pkl
+      │    │   │    <IMG0_ID>.pkl
+      │    │   └──       ...
       │    ├── dev         
       │    │      <IMG0_ID>.pkl
       │    │      <IMG1_ID>.pkl
@@ -99,9 +108,9 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       │           <IMG1_ID>.pkl
       │                ...
       ├─── img_feat_res152 
-      │        <Same subfolders as above>
-      └─── img_raw         
-                <Same subfolders as above>
+      │        <Same subfolder structure as above>
+      └─── img_feat_frcnn         
+               <Same subfolder structure as above>
   ```
 </details>
 
@@ -159,7 +168,7 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       ```json
       "test1-147-1-img1": "./test1/test1-147-1-img1.png",
       ```
-    - image filenames are preserved from the NLVR2 dataset.
+    - image filenames and (train-split) sub-folder structures are preserved from the NLVR2 dataset.
  - `img_feat_<...>/`
     - A folder containing a certain type of pre-extracted image features, each file saves the feature of one image.
     - Filename is generated as such:
