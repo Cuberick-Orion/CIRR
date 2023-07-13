@@ -44,7 +44,7 @@ The `data/cirr` folder contains all relevant annotations. The file structure is 
 Recent methods of Composed Image Retrieval (and related tasks) often use raw images rather than our pre-extracted features. Though, we are not at liberty to distribute these images.
 If you'd like to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
 
-**Note**: We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
+**Note**: We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links, and the downloaded files lack the sub-folder structure in the `/train` folder. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
 
 >To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
@@ -170,7 +170,7 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       # or
       "train-11041-2-img0": "./train/34/train-11041-2-img0.png"
       ```
-    - image filenames and (train-split) sub-folder structures are preserved from the NLVR2 dataset.
+    - image filenames and (train-split) sub-level folder structures are preserved from the NLVR2 dataset.
  - `img_feat_<...>/`
     - A folder containing a certain type of pre-extracted image features, each file saves the feature of one image.
     - Filename is generated as such:
