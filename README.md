@@ -1,6 +1,6 @@
 ## Composed Image Retrieval on Real-life Images
 
-[![arXiv](https://img.shields.io/badge/paper-iccv2021-cyan)](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.pdf) 
+[![arXiv](https://img.shields.io/badge/paper-iccv2021-cyan)](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.html) 
 [![arXiv](https://img.shields.io/badge/arXiv-2108.04024-red)](https://arxiv.org/abs/2108.04024)
 
 This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-life images (**CIRR**) dataset.
@@ -197,14 +197,13 @@ The server is hosted independently at CECS ANU, so please [email us](mailto:zhey
 
 Please cite our paper if it helps your research:
 ```bibtex
-@inproceedings{Liu:ICCV2021,
-  author    = {Zheyuan Liu and
-               Cristian Rodriguez and
-               Damien Teney and
-               Stephen Gould},
-  title     = {Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models},
-  booktitle = {ICCV},
-  year      = {2021}
+@InProceedings{Liu_2021_ICCV,
+    author    = {Liu, Zheyuan and Rodriguez-Opazo, Cristian and Teney, Damien and Gould, Stephen},
+    title     = {Image Retrieval on Real-Life Images With Pre-Trained Vision-and-Language Models},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {2125-2134}
 }
 ```
 
