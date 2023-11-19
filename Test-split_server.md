@@ -2,11 +2,13 @@
 
 We host an [evaluation server](http://cirr.cecs.anu.edu.au/) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
 
->The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
+> [!IMPORTANT]
+> The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
 
->We do not save your information, nor your uploaded files to the server. 
-
->Nevertheless, please DO NOT upload any file containing sensitive information. We are not responsible for any related incidents.
+> [!WARNING]
+> We do not save your information, nor your uploaded files to the server. 
+> 
+> Nevertheless, please DO NOT upload any file containing sensitive information. We are not responsible for any related incidents.
 
 ## Generating the Prediction Files for Upload
 
