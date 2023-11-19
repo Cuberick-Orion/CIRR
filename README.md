@@ -7,10 +7,12 @@ This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-li
 
 For details please see our [ICCV 2021 paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.pdf) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
 
-> [!TIP]
-> You are currently viewing the [Dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
+> [!Tip]
+> You are currently viewing the **Dataset repository**.
 > 
-> If you wish to develop on this task using our codebase, we recommend first checking out our [Code repository](https://github.com/Cuberick-Orion/CIRPLANT), setting up the code locally, then downloading the dataset.
+> Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/) | [**Code repository**](https://github.com/Cuberick-Orion/CIRPLANT)
+>
+> If you wish to develop on this task using our codebase, we recommend first checking out the **Code repository**, setting up the code locally, and then downloading the dataset.
 
 ## News and Upcoming Updates
 
