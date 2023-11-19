@@ -17,14 +17,14 @@ Concurrently, we release the code and pre-trained models for our method **C**omp
 **View our [5-minute video](https://youtu.be/9IA-bCuhlac).**
 
 ----
-<sub>You are currently viewing the [Project homepage](https://cuberick-orion.github.io/CIRR/).</sub>
+<sub>You are currently viewing the **Project homepage**. Dataset and code repositories are listed below.</sub>
 
 
 ## CIRR Dataset
 
 <!-- ### Download -->
 
-[Click to download our dataset](https://github.com/Cuberick-Orion/CIRR).
+[Dataset repository](https://github.com/Cuberick-Orion/CIRR)
 
 <!-- ### Test-split Evaluation Server -->
 
@@ -34,12 +34,10 @@ Note, the ground truth for the validation split is available as usual and can be
 
 ## CIRPLANT Model
 
-[Click to access our codebase](https://github.com/Cuberick-Orion/CIRPLANT).
+[Code repository](https://github.com/Cuberick-Orion/CIRPLANT)
 
 Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightning](https://www.pytorchlightning.ai/). 
 
-----
-<sub>To encourage continuing research in this task, we will additionally provide an implementation of [TIRG](https://github.com/google/tirg) that is compatible with our codebase (coming soon).</sub>
 
 ## News
  - **Aug. 2021**: We have opened our test-split evaluation server.
