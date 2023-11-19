@@ -21,8 +21,7 @@ For details please see our [ICCV 2021 paper](https://openaccess.thecvf.com/conte
 
 ## Download CIRR Dataset
 
-> [!TIP]
-> Our dataset is structured in a similar way as [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq), an existing dataset on this task.
+Our dataset is structured in a similar way as [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq), an existing dataset on this task.
 
 ### Annotations
 
