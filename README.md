@@ -7,10 +7,10 @@ This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-li
 
 For details please see our [ICCV 2021 paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.pdf) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
 
-
->You are currently viewing the [Dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
-
->If you wish to develop on this task using our codebase, we recommend first checking out our [Code repository](https://github.com/Cuberick-Orion/CIRPLANT), setting up the code locally, then downloading the dataset.
+> [!TIP]
+> You are currently viewing the [Dataset repository](https://github.com/Cuberick-Orion/CIRR). For more information, see our [Project homepage](https://cuberick-orion.github.io/CIRR/).
+> 
+> If you wish to develop on this task using our codebase, we recommend first checking out our [Code repository](https://github.com/Cuberick-Orion/CIRPLANT), setting up the code locally, then downloading the dataset.
 
 ## News and Upcoming Updates
 
@@ -19,6 +19,7 @@ For details please see our [ICCV 2021 paper](https://openaccess.thecvf.com/conte
 
 ## Download CIRR Dataset
 
+> [!TIP]
 > Our dataset is structured in a similar way as [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq), an existing dataset on this task.
 
 ### Annotations
@@ -37,14 +38,15 @@ The `data/cirr` folder contains all relevant annotations. The file structure is 
 
 ### Raw Images
 
-*Updated June 2023*
+**Updated June 2023**
 
 Recent methods of Composed Image Retrieval (and related tasks) often use raw images rather than our pre-extracted features. Though, we are not at liberty to distribute these images.
 If you'd like to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
 
-**Note**: We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links, and the downloaded files lack the sub-folder structure in the `/train` folder. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
+> [!IMPORTANT]
+> We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links, and the downloaded files lack the sub-folder structure in the `/train` folder. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
 
->To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
+> To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
 You can also [email us](mailto:zheyuan.liu@anu.edu.au) if, for any reason, you receive no response from the NLVR2 group.
 
