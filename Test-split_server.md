@@ -53,4 +53,4 @@ You shall see the result (here showing Recall@K, Recall_subset@K will be similar
 
 
 ## Contact
-If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.liu@anu.edu.au](mailto:zheyuan.liu@anu.edu.au).
+If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or email [zheyuan.david.liu@outlook.com](mailto:zheyuan.david.liu@outlook.com).
