@@ -49,7 +49,7 @@ If you'd like to access them, please refer to our image source [NLVR2](https://l
 
 > To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
-You can also [email us](mailto:zheyuan.liu@anu.edu.au) if, for any reason, you receive no response from the NLVR2 group.
+You can also [email us](mailto:zheyuan.david.liu@outlook.com) if, for any reason, you receive no response from the NLVR2 group.
 
 ### Pre-extracted Image Features
 
@@ -185,7 +185,7 @@ We do not publish the ground truth for the test split of CIRR. Instead, an evalu
 
 [See test-split server instructions](Test-split_server.md).
 
-The server is hosted independently at CECS ANU, so please [email us](mailto:zheyuan.liu@anu.edu.au) if the site is down.
+The server is hosted independently at CECS ANU, so please [email us](mailto:zheyuan.david.liu@outlook.com) if the site is down.
 
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.
@@ -209,4 +209,4 @@ Please cite our paper if it helps your research:
 ```
 
 ## Contact
-If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or [email us](mailto:zheyuan.liu@anu.edu.au).
+If you have any questions regarding our dataset, model, or publication, please create an issue in the [project repository](https://github.com/Cuberick-Orion/CIRR/issues), or [email us](mailto:zheyuan.david.liu@outlook.com).
