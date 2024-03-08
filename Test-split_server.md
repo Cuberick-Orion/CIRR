@@ -1,9 +1,17 @@
 # Test-split Server on CIRR Dataset
 
+> [!NOTE] 
+> If your submissions to our test server **succeed only *sometimes* while failing in other instances**, it is likely because of Google's reCAPTCHA (see https://github.com/Cuberick-Orion/CIRR/issues/15).
+>
+> Unfortunately, we have limited control over its behaviour. Please consider switching device/s or IP address, and avoiding multiple submissions in a short period.
+>
+> Alternatively, if you are certain that our server is down, please [contact us](#contact).
+
+##
+
 We host an [evaluation server](http://cirr.cecs.anu.edu.au/) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
 
-> [!IMPORTANT]
-> The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
+The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
 
 > [!WARNING]
 > We do not save your information, nor your uploaded files to the server. 
