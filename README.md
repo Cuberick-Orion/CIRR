@@ -40,14 +40,13 @@ The `data/cirr` folder contains all relevant annotations. The file structure is 
 ### Raw Images
 
 **Updated June 2023**
-
 Recent methods of Composed Image Retrieval (and related tasks) often use raw images rather than our pre-extracted features. Though, we are not at liberty to distribute these images.
-If you'd like to access them, please refer to our image source [NLVR2](https://lil.nlp.cornell.edu/nlvr/).
+If you'd like to access them, please see below.
 
 > [!IMPORTANT]
 > We do not recommend [downloading the images by URLs](https://github.com/lil-lab/nlvr/tree/master/nlvr2#downloading-the-images), as it contains too many broken links, and the downloaded files lack the sub-folder structure in the `/train` folder. Instead, we suggest [following the instructions here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) to directly access the images. To quote the authors:
-
-> To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
+>
+> > To obtain access, please fill out the linked [Google Form](https://goo.gl/forms/yS29stWnFWzrDBFH3). This form asks for your basic information and asks you to agree to our Terms of Service. We will get back to you within a week. If you have any questions, please email `nlvr@googlegroups.com`.
 
 You can also [email us](mailto:zheyuan.david.liu@outlook.com) if, for any reason, you receive no response from the NLVR2 group.
 
@@ -56,10 +55,10 @@ You can also [email us](mailto:zheyuan.david.liu@outlook.com) if, for any reason
 The available types of image features are:
  - ImageNet pre-trained ResNet152 features
    - can be extracted from raw images
-   - we recommend [downloading our extracted in `zip`](https://drive.google.com/file/d/1JIEM46AwtdwfsEsSMsRoZhml0Xlf5060/view?usp=sharing)
+   - or download our pre-extracted features [![Download](https://img.shields.io/badge/OneDrive-Download-red?style=flat-square&logo=microsoftonedrive)](https://1drv.ms/u/s!AgLqyV5O53gxuPtPHH1LWQplm7WKag?e=V66dRc)
  - F-RCNN image regional features
    - provided by OSCAR as we source our images from NLVR2
-   - we recommend [downloading the subset of features used in CIRR](https://drive.google.com/file/d/1lzd3bljiF9evVkHJ-95FLCfu7dGJg-Iz/view?usp=sharing) (filtered out unused images and re-zipped by us)
+   - download the subset of features used in CIRR (filtered out unused images and re-zipped by us) [![Download](https://img.shields.io/badge/OneDrive-Download-red?style=flat-square&logo=microsoftonedrive)](https://1drv.ms/u/s!AgLqyV5O53gxuPtS48r36TmzZChXJw?e=BDgmyr)
    - alternatively, [download directly from OSCAR](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md)
 
 Each `zip` file we provide contains a folder of individual image feature files `.pkl`.
