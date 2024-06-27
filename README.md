@@ -1,21 +1,29 @@
+<div align="center">
+ 
 ## Composed Image Retrieval on Real-life Images
-
-[![arXiv](https://img.shields.io/badge/paper-iccv2021-cyan)](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.html) 
-[![arXiv](https://img.shields.io/badge/arXiv-2108.04024-red)](https://arxiv.org/abs/2108.04024)
 
 This repository contains the **C**omposed **I**mage **R**etrieval on **R**eal-life images (**CIRR**) dataset.
 
 For details please see our [ICCV 2021 paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.pdf) - **Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models**.
 
-> [!Tip]
-> You are currently viewing the **Dataset repository**.
-> 
-> Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/) | [**Code repository**](https://github.com/Cuberick-Orion/CIRPLANT)
->
-> If you wish to develop on this task using our codebase, we recommend first checking out the **Code repository**, setting up the code locally, and then downloading the dataset.
+##
 
-## News and Upcoming Updates
+<sup> You are currently viewing the **Dataset repository**.
+Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/) &nbsp;|&nbsp; [**Code repository**](https://github.com/Cuberick-Orion/CIRPLANT) </sup>
 
+[![arXiv](https://img.shields.io/badge/paper-iccv2021-383b78)](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.html) 
+[![arXiv](https://img.shields.io/badge/arXiv-2108.04024-00ff00)](https://arxiv.org/abs/2108.04024)
+
+
+
+</div>
+
+##
+
+**News and Upcoming Updates**
+
+* **Jun 2024** Please contact us if you are having trouble gaining access to the raw images from NLVR2.
+* **Jun 2024** Download links have been updated.
 * Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.
 
 
