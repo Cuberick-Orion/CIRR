@@ -40,7 +40,7 @@ mkdir data
 cd data
 
 # clone the cirr_dataset branch to the local data/cirr folder
-git clone -b cirr_dataset git@github.com:Cuberick-Orion/CIRR.git cirr
+git clone -b cirr_dataset https://github.com/Cuberick-Orion/CIRR.git cirr
 ```
 
 The `data/cirr` folder contains all relevant annotations. The file structure is described [below](#dataset-file-structure).
