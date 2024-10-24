@@ -22,7 +22,7 @@ Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/)
 
 **News and Upcoming Updates**
 
-* **Jun 2024** Please contact us if you are having trouble gaining access to the raw images from NLVR2.
+* **Oct 2024** **Please contact us if you are having trouble gaining access to the raw images from NLVR2.**
 * **Jun 2024** Download links have been updated.
 * Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.
 
@@ -47,12 +47,13 @@ The `data/cirr` folder contains all relevant annotations. The file structure is 
 
 ### Raw Images
 
-**Updated June 2023**
-Recent methods of Composed Image Retrieval (and related tasks) often use raw images rather than our pre-extracted features. However, we are not at liberty to distribute these images as we source them from the NLVR2 dataset.
+**Updated October 2024 -- Please contact us if you are having trouble gaining access to the raw images from NLVR2.** 
 
-If you'd like to gain access, the first step would be to contact the NLVR team, instructions are [here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) (they ask you to fill out a google form and agree to their terms of service).
+Starting from late 2023, we have been made aware by multiple research groups that the NLVR2 team is not responding to their requests. To this end, please see the following steps in obtaining the raw images:
 
-You can also [email us](mailto:zheyuan.david.liu@outlook.com) if, for any reason, you receive no response from the NLVR2 group.
+1. Please first contact the NLVR team and fill out a Google form agreeing to their terms of service. Instructions are [here](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download).
+2. If you receive no response from the NLVR team, [email us](mailto:zheyuan.david.liu@outlook.com).
+3. When contacting us, please explicitly state that you have filled out the NLVR team's Google form agreeing to their terms of service.
 
 > [!IMPORTANT]
 > The NLVR2 repository provides another way to obtain the images, which is to download the images by URLs. But we **do not** recommend it, as many of the links are broken, and the downloaded files lack the sub-folder structure in the `/train` folder.
