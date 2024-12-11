@@ -1,7 +1,7 @@
 # Test-split Server on CIRR Dataset
 
 > [!NOTE] 
-> If your submissions to our test server **succeed only *sometimes* while failing in other instances**, it is likely because of Google's reCAPTCHA (see https://github.com/Cuberick-Orion/CIRR/issues/15).
+> If your submissions to our test server **succeed only *sometimes* while failing in other instances**, it is likely because of Google's reCAPTCHA (see https://github.com/Cuberick-Orion/CIRR/issues/15), particularly if you reside in regions that require a VPN to access our website (mainland China, for instance).
 >
 > Unfortunately, we have limited control over its behaviour. Please consider switching device/s or IP address, and avoiding multiple submissions in a short period.
 >
