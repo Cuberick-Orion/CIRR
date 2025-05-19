@@ -1,15 +1,13 @@
 # Test-split Server on CIRR Dataset
 
-> [!IMPORTANT]
-> Server is now down due to a network outage as of 16 May, 2025. We are working with the university IT to fix it.
-> 
-> This message will be removed once we bring it back online.
+### Updates
 
-
-
+* **May 2025** We encountered a network outage, which has now been fixed. The [backup test server](https://cirr.jyu.one/) is now online.
+* **May 2025** We have replaced reCAPTCHA with hCaptcha for better accessibility.
+  
 ##
 
-We host an [evaluation server](http://cirr.cecs.anu.edu.au/) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
+We host an [evaluation server](http://cirr.cecs.anu.edu.au/) ([backup](https://cirr.jyu.one/)) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
 
 The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
 
