@@ -22,6 +22,7 @@ Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/)
 
 **News and Upcoming Updates**
 
+* **May 2025** Backup test server is brought online at [https://cirr.jyu.one/](https://cirr.jyu.one/).
 * **Oct 2024** **Please contact us if you are having trouble gaining access to the raw images from NLVR2.**
 * **Jun 2024** Download links have been updated.
 * Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.
@@ -190,7 +191,7 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       in this case, `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
-We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](http://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split. The functions of the test-split server will be incrementally updated.
+We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](http://cirr.cecs.anu.edu.au/), with a backup [here](https://cirr.jyu.one/), should you prefer to publish results on the test-split. The functions of the test-split server will be incrementally updated.
 
 [See test-split server instructions](Test-split_server.md).
 
