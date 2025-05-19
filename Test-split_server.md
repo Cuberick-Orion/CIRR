@@ -1,11 +1,11 @@
 # Test-split Server on CIRR Dataset
 
-> [!NOTE] 
-> If your submissions to our test server **succeed only *sometimes* while failing in other instances**, it is likely because of Google's reCAPTCHA (see https://github.com/Cuberick-Orion/CIRR/issues/15), particularly if you reside in regions that require a VPN to access our website (mainland China, for instance).
->
-> Unfortunately, we have limited control over its behaviour. Please consider switching device/s or IP address, and avoiding multiple submissions in a short period.
->
-> Alternatively, if you are certain that our server is down, please [contact us](#contact).
+> [!IMPORTANT]
+> Server is now down due to a network outage as of 16 May, 2025. We are working with the university IT to fix it.
+> 
+> This message will be removed once we bring it back online.
+
+
 
 ##
 
