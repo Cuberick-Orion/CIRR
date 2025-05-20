@@ -28,7 +28,7 @@ Concurrently, we release the code and pre-trained models for our method **C**omp
 
 <!-- ### Test-split Evaluation Server -->
 
-We do not publish the ground truth for the test split of CIRR. Instead, we host an [evaluation server](http://cirr.cecs.anu.edu.au/), should you prefer to publish results on the test-split.
+We do not publish the ground truth for the test split of CIRR. Instead, we host an [evaluation server](https://github.com/Cuberick-Orion/CIRR/blob/main/Test-split_server.md), should you prefer to publish results on the test-split.
 
 Note, the ground truth for the validation split is available as usual and can be used for development.
 
