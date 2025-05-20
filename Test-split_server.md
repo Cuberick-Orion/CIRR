@@ -1,10 +1,5 @@
 # Test-split Server on CIRR Dataset
 
-### Updates
-
-* **May 2025** We encountered a network outage, which has now been fixed. The [backup test server](https://cirr.jyu.one/) is now online.
-* **May 2025** We have replaced reCAPTCHA with hCaptcha for better accessibility.
-  
 ##
 
 We host an [evaluation server](http://cirr.cecs.anu.edu.au/) ([backup](https://cirr.jyu.one/)) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
@@ -16,6 +11,12 @@ The `.json` files must be generated following our templates, otherwise, it canno
 > 
 > Nevertheless, please DO NOT upload any file containing sensitive information. We are not responsible for any related incidents.
 
+
+#### Updates
+
+* **May 2025** We encountered a network outage on 16 May 2025, the main test server is now offline. For now please refer to the [backup test server](https://cirr.jyu.one/).
+* **May 2025** We have replaced reCAPTCHA with hCaptcha, users that previously relied on VPN to submit should experience less errors.
+  
 ## Generating the Prediction Files for Upload
 
 ### The Easiest Way
