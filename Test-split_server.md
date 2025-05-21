@@ -14,6 +14,7 @@ The `.json` files must be generated following our templates, otherwise, it canno
 
 #### Updates
 
+* **May 2025** The [main test server](cirr.cecs.anu.edu.au) is back online.
 * **May 2025** We encountered a network outage on 16 May 2025, the main test server is now offline. For now please refer to the [backup test server](https://cirr.jyu.one/).
 * **May 2025** We have replaced reCAPTCHA with hCaptcha, users that previously relied on VPN to submit should experience less errors.
   
