@@ -22,7 +22,7 @@ Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/)
 
 **News and Upcoming Updates**
 
-* **May 2025** Backup test server is online at [https://cirr.jyu.one/](https://cirr.jyu.one/). The [main test server](http://cirr.cecs.anu.edu.au/) is now back online following the recent outage.
+* **May 2025** Backup test server is online at [cirr.junjie.au](https://cirr.junjie.au/). The [main test server](http://cirr.cecs.anu.edu.au/) is now back online following the recent outage.
 * **Oct 2024** Please contact us if you are having trouble gaining access to the raw images from NLVR2.
 * **Jun 2024** Download links have been updated.
 * Please note there is a typo in our paper (Table 2) -- the number of pairs in val is ~~4,184~~ 4,181.
