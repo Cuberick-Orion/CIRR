@@ -20,7 +20,12 @@ Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/)
 
 ##
 
+> [!CAUTION]
+> Please be advised that the test server is down at the moment, we are working on it. Unfortunately we do not have a concrete timeline. [Issue #28](/../../issues/28) <br/>
+> *last updated: 8 Sep 2026*
+
 **News and Upcoming Updates**
+
 
 * **May 2025** Backup test server is online at [cirr.junjie.au](https://cirr.junjie.au/). The [main test server](http://cirr.cecs.anu.edu.au/) is now back online following the recent outage.
 * **Oct 2024** Please contact us if you are having trouble gaining access to the raw images from NLVR2.
