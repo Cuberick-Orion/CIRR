@@ -21,8 +21,8 @@ Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/)
 ##
 
 > [!CAUTION]
-> Please be advised that the test server is down at the moment, we are working on it. Unfortunately we do not have a concrete timeline. [Issue #28](/../../issues/28) <br/>
-> *last updated: 8 Sep 2026*
+> Please be advised that the test server is down at the moment, we are working on it. For now please use the [backup server](https://cirr.junjie.au/). Unfortunately we do not have a concrete timeline. [Issue #28](/../../issues/28) <br/>
+> *last updated: 9 Sep 2026*
 
 **News and Upcoming Updates**
 
