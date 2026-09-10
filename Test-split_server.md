@@ -1,8 +1,12 @@
 # Test-split Server on CIRR Dataset
 
-##
+[![Server status](https://img.shields.io/website?url=https%3A%2F%2Fcirr.zheyuanliu.me%2Fapi%2Fhealth&label=server&up_message=online&up_color=brightgreen&down_message=offline&down_color=red)](https://cirr.zheyuanliu.me)
 
-We host an [evaluation server](http://cirr.cecs.anu.edu.au/) ([backup](https://cirr.junjie.au/)) on a dedicated machine. It accepts a `.json` file containing the model's predictions and returns results.
+The CIRR test-split evaluation server has migrated to Cloudflare.
+Please use the [primary evaluation server](https://cirr.zheyuanliu.me).
+A [backup server](https://cirr.junjie.au) is also available.
+
+It accepts a `.json` file containing the model's predictions and returns results.
 
 The `.json` files must be generated following our templates, otherwise, it cannot be properly processed.
 
@@ -12,12 +16,6 @@ The `.json` files must be generated following our templates, otherwise, it canno
 > Nevertheless, please DO NOT upload any file containing sensitive information. We are not responsible for any related incidents.
 
 
-#### Updates
-
-* **May 2025** The [main test server](http://cirr.cecs.anu.edu.au/) is back online.
-* **May 2025** We encountered a network outage on 16 May 2025, ~~the main test server is now offline~~. For now please refer to the [backup test server](https://cirr.junjie.au/).
-* **May 2025** We have replaced reCAPTCHA with hCaptcha, users that previously relied on VPN to submit should experience less errors.
-  
 ## Generating the Prediction Files for Upload
 
 ### The Easiest Way
