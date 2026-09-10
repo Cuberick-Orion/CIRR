@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | escape }}">
+    <title>{{ page.title | escape }}</title>
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/project.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-layout">
+        <a class="nav-brand" href="https://cirr.zheyuanliu.me/">CIRR Dataset</a>
+        <div class="nav-links">
+          <a class="nav-link" href="https://cirr.zheyuanliu.me/">Home</a>
+          <a class="nav-link active" href="{{ '/' | relative_url }}" aria-current="page">Project page</a>
+          <a class="nav-link" href="https://cirr.zheyuanliu.me/raw-image-download">Raw image download</a>
+          <a class="nav-link nav-section-start" href="https://cirr.zheyuanliu.me/evaluate.html">Test-split evaluation</a>
+          <a class="nav-link" href="https://cirr.zheyuanliu.me/how-to">How-To</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content" class="project-layout" tabindex="-1">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>This site is maintained alongside the <a href="https://github.com/Cuberick-Orion/CIRR" target="_blank" rel="noopener noreferrer">CIRR project</a>.</p>
+        <p>If you have any questions, please <a href="https://github.com/Cuberick-Orion/CIRR/issues" target="_blank" rel="noopener noreferrer">create an issue</a> or <a href="mailto:zheyuan.david.liu@outlook.com">email us directly</a>.</p>
+        <hr>
+        <p>Australian National University</p>
+        <p>Last modified: <time datetime="{{ page.last_modified_at | date: '%Y-%m-%d' }}">{{ page.last_modified_at | date: '%-d %B %Y' }}</time></p>
+      </div>
+    </footer>
+  </body>
+</html>
