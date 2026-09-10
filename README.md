@@ -212,7 +212,7 @@ The CIRR test-split evaluation server has migrated to Cloudflare.
 Please use the [primary evaluation server](https://cirr.zheyuanliu.me).
 A [backup server](https://cirr.junjie.au) is also available.
 
-[See test-split server instructions](Test-split_server.md).
+[See test-split server instructions](https://cirr.zheyuanliu.me/how-to).
 
 Please [email us](mailto:zheyuan.david.liu@outlook.com) if the site is down.
 
