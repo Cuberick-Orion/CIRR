@@ -18,16 +18,18 @@ Site navigation > [**Project homepage**](https://cuberick-orion.github.io/CIRR/)
 
 </div>
 
-##
 
 **Test Server Status**
 
-> [!TIP]
-> ~~Please be advised that the test server is down at the moment, we are working on it.~~
->
-> We've migrated the test server to [here](https://cirr.zheyuanliu.me/) with a [backup server](https://cirr.junjie.au/).
-> 
-> *last updated: 10 Sep 2026*
+[![Server status](https://img.shields.io/website?url=https%3A%2F%2Fcirr.zheyuanliu.me%2Fapi%2Fhealth&label=server&up_message=online&up_color=brightgreen&down_message=offline&down_color=red)](https://cirr.zheyuanliu.me)
+
+The CIRR test-split evaluation server has migrated to Cloudflare.
+Please use the [primary evaluation server](https://cirr.zheyuanliu.me).
+A [backup server](https://cirr.junjie.au) is also available.
+
+*Last updated: 10 September 2026.*
+
+##
 
 
 **News and Upcoming Updates**
@@ -202,11 +204,17 @@ Once downloaded, unzip it into `data/cirr/`, following the file structure [below
       in this case, `test1-147-1-img1.pkl`, so that each file can be directly indexed by its name.
 
 ## Test-split Evaluation Server
-We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted [here](http://cirr.cecs.anu.edu.au/), with a backup [here](https://cirr.jyu.one/), should you prefer to publish results on the test-split. The functions of the test-split server will be incrementally updated.
+We do not publish the ground truth for the test split of CIRR. Instead, an evaluation server is hosted should you prefer to publish results on the test-split. The functions of the test-split server will be incrementally updated.
+
+[![Server status](https://img.shields.io/website?url=https%3A%2F%2Fcirr.zheyuanliu.me%2Fapi%2Fhealth&label=server&up_message=online&up_color=brightgreen&down_message=offline&down_color=red)](https://cirr.zheyuanliu.me)
+
+The CIRR test-split evaluation server has migrated to Cloudflare.
+Please use the [primary evaluation server](https://cirr.zheyuanliu.me).
+A [backup server](https://cirr.junjie.au) is also available.
 
 [See test-split server instructions](Test-split_server.md).
 
-The server is hosted independently at CECS ANU, so please [email us](mailto:zheyuan.david.liu@outlook.com) if the site is down.
+Please [email us](mailto:zheyuan.david.liu@outlook.com) if the site is down.
 
 ## License
  - We have licensed the annotations of CIRR under the MIT License. Please refer to the [LICENSE file](LICENSE) for details.
