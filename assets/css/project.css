@@ -21,7 +21,7 @@ body {
 
 a { color: #26679f; text-decoration: none; }
 a:hover { text-decoration: underline; }
-a:focus-visible, .citation-code:focus-visible { outline: 3px solid #2f6ea9; outline-offset: 3px; border-radius: 3px; }
+a:focus-visible, .citation-code:focus-visible, .reference-code:focus-visible, summary:focus-visible { outline: 3px solid #2f6ea9; outline-offset: 3px; border-radius: 3px; }
 a[target="_blank"]::after { content: " ↗"; font-size: 0.8em; }
 p { margin: 0 0 0.75rem; }
 strong { font-weight: 700; }
@@ -160,6 +160,88 @@ strong { font-weight: 700; }
 .citation-code pre { min-width: max-content; margin: 0; padding: 1rem 1.25rem; color: #364c64; font-size: 0.8125rem; line-height: 1.7; tab-size: 4; }
 code { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
+.panel-body h3 {
+  margin: 2rem 0 0.6rem;
+  color: var(--site-ink);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.panel-body > h3:first-child { margin-top: 0; }
+.panel-body h4 {
+  margin: 0 0 0.4rem;
+  color: var(--site-ink);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.panel-body :not(pre) > code {
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+  color: #364c64;
+  background: #f1f4f7;
+  font-size: 0.875em;
+  overflow-wrap: anywhere;
+}
+.panel-body :is(h3, .file-entry) { scroll-margin-top: 1.25rem; }
+.instruction-list { padding-left: 1.4rem; }
+.instruction-list li { margin-bottom: 0.55rem; padding-left: 0.25rem; }
+.instruction-list li::marker { color: var(--site-accent); font-weight: 600; }
+.reference-note {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #b7d5c7;
+  border-radius: 0 8px 8px 0;
+  background: #f5f9f7;
+}
+.resource-row {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #edf0f3;
+}
+.resource-row .btn { margin-top: 0.35rem; }
+.file-entry {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #edf0f3;
+}
+.file-entry h3 { margin-top: 0; }
+.file-path { margin: 0 0 0.85rem; }
+.reference-code {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid var(--site-border);
+  border-radius: 10px;
+  background: #f6f8fa;
+}
+.reference-code pre {
+  min-width: max-content;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  color: #364c64;
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  tab-size: 4;
+}
+.reference-details {
+  margin: 1rem 0 0;
+  border: 1px solid var(--site-border);
+  border-radius: 10px;
+}
+.reference-details summary {
+  padding: 0.8rem 1.1rem;
+  color: #4b5968;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.reference-details summary::marker { color: var(--site-accent); }
+.reference-details[open] > summary { border-bottom: 1px solid var(--site-border); }
+.reference-details .reference-code { margin: 0; border: 0; border-radius: 0 0 10px 10px; }
+.reference-details .example-label { margin: 0; padding: 0.85rem 1.25rem 0; background: #f6f8fa; font-size: 0.8125rem; font-weight: 600; }
+.service-status { display: inline-block; margin-bottom: 1rem; line-height: 1; }
+.service-status img { display: block; max-width: 100%; height: 20px; }
+.section-footnote { margin-top: 1rem; font-size: 0.8125rem; }
+
 .site-footer { padding: 1rem 15px; border-top: 1px solid var(--site-border); color: var(--site-muted); font-size: 0.8125rem; line-height: 1.6; text-align: center; }
 .footer-content { max-width: 1110px; margin: 0 auto; }
 .site-footer p { margin-bottom: 1rem; }
@@ -188,6 +270,8 @@ code { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", 
   .action-row .btn { width: 100%; }
   .panel-heading { min-height: 64px; padding: 1rem 1.25rem; }
   .panel-body { padding: 1.25rem; }
+  .resource-row .btn { width: 100%; }
+  .reference-note { padding: 0.9rem 1rem; }
 }
 
 @media (max-width: 374.98px) {

@@ -1,8 +1,8 @@
 ---
 layout: project
 title: "CIRR Dataset — Composed Image Retrieval on Real-life Images"
-description: "The CIRR dataset and CIRPLANT model for composed image retrieval on real-life images. Explore the dataset, paper, code, and test-split evaluation server."
-last_modified_at: 2026-09-10
+description: "The CIRR dataset and CIRPLANT model for composed image retrieval on real-life images. Download annotations, images, and features; explore file formats, the paper, code, and test-split evaluation."
+last_modified_at: 2026-09-17
 ---
 
 <header class="project-intro" aria-labelledby="page-heading" markdown="1">
@@ -22,13 +22,15 @@ We introduce the **C**omposed **I**mage **R**etrieval on **R**eal-life images (*
 </div>
 
 <div class="action-row">
-  <a class="btn btn-primary" href="https://github.com/Cuberick-Orion/CIRR" target="_blank" rel="noopener noreferrer">Dataset repository</a>
+  <a class="btn btn-primary" href="#cirr-dataset">Download dataset</a>
   <a class="btn btn-dark" href="https://openaccess.thecvf.com/content/ICCV2021/html/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.html" target="_blank" rel="noopener noreferrer">Published paper · ICCV 2021</a>
   <a class="btn btn-outline" href="https://youtu.be/9IA-bCuhlac" target="_blank" rel="noopener noreferrer">5-minute video</a>
 </div>
 
 <nav class="page-outline" aria-label="On this page">
-  <a href="#cirr-dataset">Dataset</a>
+  <a href="#cirr-dataset">Downloads</a>
+  <a href="#dataset-file-description">File reference</a>
+  <a href="#test-split-evaluation-server">Evaluation</a>
   <a href="#cirplant-model">Model</a>
   <a href="#news">News</a>
   <a href="#licensing">Licensing</a>
@@ -61,22 +63,297 @@ We identify a major challenge of this task as the inherent ambiguity in knowing 
 
 <section id="cirr-dataset" class="panel" aria-labelledby="dataset-heading" markdown="1">
 
-## CIRR Dataset
+## Download CIRR dataset
 {: #dataset-heading .panel-heading}
 
 <div class="panel-body" markdown="1">
 
-The CIRR test-split ground truth is kept private. Use the [primary evaluation server](https://cirr.zheyuanliu.me/evaluate.html) to submit your model's predictions and obtain test-split scores. A [backup server](https://cirr.junjie.au/) is also available.
+CIRR contains **annotations**, **raw images**, and optional **pre-extracted image features**. Its organization follows [Fashion-IQ](https://github.com/XiaoxiaoGuo/fashion-iq). Start with the annotations, then add the images or features you need under `data/cirr/`.
 
-On the primary server, sign in with GitHub, upload a prediction JSON file, and complete hCaptcha verification to evaluate it. The [How-To guide](https://cirr.zheyuanliu.me/how-to) covers file formats, submission limits, and results. Prediction-file examples are also available in the [repository instructions](https://github.com/Cuberick-Orion/CIRR/blob/main/Test-split_server.md).
+### Annotations
+{: #annotations}
 
-Validation-split ground truth remains publicly available for local development and evaluation.
+Clone the `cirr_dataset` branch into a local `data/cirr/` folder:
+
+<div class="reference-code" tabindex="0" role="region" aria-label="Clone the CIRR annotations" markdown="1">
+
+```bash
+# create a `data` folder at your desired location
+mkdir data
+cd data
+
+# clone the cirr_dataset branch to the local data/cirr folder
+git clone -b cirr_dataset git@github.com:Cuberick-Orion/CIRR.git cirr
+```
+
+</div>
+
+The [dataset repository](https://github.com/Cuberick-Orion/CIRR/tree/cirr_dataset) contains the annotations. See the [directory structure](#dataset-file-structure) and [file reference](#dataset-file-description) below for their organization and fields.
+
+<p class="reference-note"><strong>Paper correction:</strong> Table 2 should report <strong>4,181 validation pairs</strong>, rather than 4,184.</p>
+
+### Raw images
+{: #raw-images}
+
+CIRR uses images from NLVR2. To obtain them:
+
+1. Follow the [NLVR2 direct-image-download instructions](https://github.com/lil-lab/nlvr/tree/master/nlvr2#direct-image-download) and submit the form agreeing to its Terms of Service.
+2. If the NLVR2 team does not respond, [email us](mailto:zheyuan.david.liu@outlook.com).
+3. In your email, explicitly confirm that you submitted the NLVR2 form and agreed to its terms.
+{: .instruction-list}
+
+<p class="reference-note"><strong>Use the direct image archive.</strong> Downloading individual images by URL is not recommended: many links are broken, and those downloads lack the required subfolder structure in <code>train/</code>. Preserve the original filenames and folders when extracting the images.</p>
+
+[Raw image download guidance](https://cirr.zheyuanliu.me/raw-image-download)
+
+### Pre-extracted image features
+{: #pre-extracted-image-features}
+
+Features are optional. Each supplied ZIP contains individual `.pkl` files; extract it into `data/cirr/`, retaining the [directory structure](#dataset-file-structure).
+
+<div class="resource-row" markdown="1">
+
+#### ResNet152 features
+
+ImageNet-pretrained ResNet152 features can be extracted from the raw images or downloaded ready to use.
+
+<a class="btn btn-outline" href="https://1drv.ms/u/s!AgLqyV5O53gxuPtPHH1LWQplm7WKag?e=V66dRc" target="_blank" rel="noopener noreferrer">Download ResNet152 features</a>
+
+</div>
+
+<div class="resource-row" markdown="1">
+
+#### F-RCNN regional features
+
+These features are provided by OSCAR for NLVR2 images. We offer the subset used in CIRR, with unused images filtered out and the files re-zipped. Alternatively, follow [OSCAR's download instructions](https://github.com/microsoft/Oscar/blob/master/DOWNLOAD.md).
+
+<a class="btn btn-outline" href="https://1drv.ms/u/s!AgLqyV5O53gxuPtS48r36TmzZChXJw?e=BDgmyr" target="_blank" rel="noopener noreferrer">Download F-RCNN features</a>
+
+</div>
+
+</div>
+</section>
+
+<section id="dataset-file-description" class="panel" aria-labelledby="file-reference-heading" markdown="1">
+
+## Dataset file reference
+{: #file-reference-heading .panel-heading}
+
+<div class="panel-body" markdown="1">
+
+### Directory structure
+{: #dataset-file-structure}
+
+In filenames, `VER` is the dataset version and `SPLIT` is `train`, `val`, or `test1`.
+
+Keep the NLVR2 image filenames and numeric training subfolders. These folder numbers carry no special meaning in CIRR. Both feature directories follow the same subfolder structure as `img_raw/`.
+
+The raw-image validation folder is named **`dev/`**, while its annotation files use **`val`**.
+
+<details class="reference-details" markdown="1">
+<summary>View the complete directory structure</summary>
+
+<div class="reference-code" tabindex="0" role="region" aria-label="CIRR dataset directory structure" markdown="1">
+
+```text
+data/cirr/
+├── captions/
+│   ├── cap.VER.test1.json
+│   ├── cap.VER.train.json
+│   └── cap.VER.val.json
+├── captions_ext/
+│   ├── cap.ext.VER.test1.json
+│   ├── cap.ext.VER.train.json
+│   └── cap.ext.VER.val.json
+├── image_splits/
+│   ├── split.VER.test1.json
+│   ├── split.VER.train.json
+│   └── split.VER.val.json
+├── img_raw/
+│   ├── train/
+│   │   ├── 0/<image_id>.png
+│   │   ├── 1/<image_id>.png
+│   │   ├── 2/<image_id>.png
+│   │   └── ...
+│   ├── dev/<image_id>.png
+│   └── test1/<image_id>.png
+├── img_feat_res152/
+└── img_feat_frcnn/
+```
+
+</div>
+
+</details>
+
+<div class="file-entry" markdown="1">
+
+### Core annotations
+{: #core-annotations}
+
+`captions/cap.VER.SPLIT.json`
+{: .file-path}
+
+A list of records containing the core information for each query–target pair. The example includes the pair ID, reference and target images, modification sentence, and image-set membership. See **Section G of the paper's supplementary material** for field details.
+
+<details class="reference-details" markdown="1">
+<summary>View a core annotation example</summary>
+
+<div class="reference-code" tabindex="0" role="region" aria-label="Core annotation JSON example" markdown="1">
+
+```json
+{
+  "pairid": 12063,
+  "reference": "test1-147-1-img1",
+  "target_hard": "test1-83-0-img1",
+  "target_soft": {
+    "test1-83-0-img1": 1.0
+  },
+  "caption": "remove all but one dog and add a woman hugging   it",
+  "img_set": {
+    "id": 1,
+    "members": [
+      "test1-147-1-img1",
+      "test1-1001-2-img0",
+      "test1-83-1-img1",
+      "test1-359-0-img1",
+      "test1-906-0-img1",
+      "test1-83-0-img1"
+    ],
+    "reference_rank": 3,
+    "target_rank": 4
+  }
+}
+```
+
+</div>
+
+</details>
+
+</div>
+
+<div class="file-entry" markdown="1">
+
+### Auxiliary annotations
+{: #auxiliary-annotations}
+
+`captions_ext/cap.ext.VER.SPLIT.json`
+{: .file-path}
+
+A list of auxiliary annotations for each query–target pair. See **Section C of the supplementary material** for details.
+
+<details class="reference-details" markdown="1">
+<summary>View an auxiliary annotation example</summary>
+
+<div class="reference-code" tabindex="0" role="region" aria-label="Auxiliary annotation JSON example" markdown="1">
+
+```json
+{
+  "pairid": 12063,
+  "reference": "test1-147-1-img1",
+  "target_hard": "test1-83-0-img1",
+  "caption_extend": {
+    "0": "being a photo of dogs",
+    "1": "add a big dog",
+    "2": "more focused on the hugging",
+    "3": "background should contain grass"
+  }
+}
+```
+
+</div>
+
+</details>
+
+</div>
+
+<div class="file-entry" markdown="1">
+
+### Image splits
+{: #image-splits}
+
+`image_splits/split.VER.SPLIT.json`
+{: .file-path}
+
+A dictionary mapping each image ID to its relative image path. Original filenames and training subfolders are preserved from NLVR2.
+
+<details class="reference-details" markdown="1">
+<summary>View an image split example</summary>
+
+Test-split excerpt (`split.VER.test1.json`):
+{: .example-label}
+
+<div class="reference-code" tabindex="0" role="region" aria-label="Test image split JSON example" markdown="1">
+
+```json
+{
+  "test1-147-1-img1": "./test1/test1-147-1-img1.png"
+}
+```
+
+</div>
+
+Training-split excerpt (`split.VER.train.json`):
+{: .example-label}
+
+<div class="reference-code" tabindex="0" role="region" aria-label="Training image split JSON example" markdown="1">
+
+```json
+{
+  "train-11041-2-img0": "./train/34/train-11041-2-img0.png"
+}
+```
+
+</div>
+
+</details>
+
+</div>
+
+<div class="file-entry" markdown="1">
+
+### Image feature files
+{: #image-feature-files}
+
+`img_feat_res152/` and `img_feat_frcnn/`
+{: .file-path}
+
+Each `.pkl` file stores one image's features. Replace the image filename's `.png` extension with `.pkl` to index the corresponding feature file:
+
+<div class="reference-code" tabindex="0" role="region" aria-label="Image feature filename example" markdown="1">
+
+```python
+image_id = "test1-147-1-img1.png"
+feature_filename = image_id.replace(".png", ".pkl")
+# test1-147-1-img1.pkl
+```
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="test-split-evaluation-server" class="panel" aria-labelledby="evaluation-heading" markdown="1">
+
+## Test-split evaluation
+{: #evaluation-heading .panel-heading}
+
+<div class="panel-body" markdown="1">
+
+<a class="service-status" href="https://cirr.zheyuanliu.me"><img src="https://img.shields.io/website?url=https%3A%2F%2Fcirr.zheyuanliu.me%2Fapi%2Fhealth&amp;label=server&amp;up_message=online&amp;up_color=brightgreen&amp;down_message=offline&amp;down_color=red" alt="Evaluation server status" height="20" loading="lazy"></a>
+
+The test-split ground truth is kept private. Submit your model's prediction JSON files to the [evaluation server](https://cirr.zheyuanliu.me/evaluate.html) to obtain test-split scores. Validation-split ground truth remains publicly available for local development and evaluation.
+
+Sign in with GitHub, choose a prediction file, and complete hCaptcha verification. The [How-To guide](https://cirr.zheyuanliu.me/how-to) covers file formats, submission limits, example files, and results.
 
 <div class="action-row">
-  <a class="btn btn-primary" href="https://github.com/Cuberick-Orion/CIRR" target="_blank" rel="noopener noreferrer">Dataset repository</a>
-  <a class="btn btn-outline" href="https://cirr.zheyuanliu.me/raw-image-download">Raw image download</a>
-  <a class="btn btn-outline" href="https://cirr.zheyuanliu.me/evaluate.html">Test-split evaluation</a>
+  <a class="btn btn-primary" href="https://cirr.zheyuanliu.me/evaluate.html">Test-split evaluation</a>
+  <a class="btn btn-outline" href="https://cirr.zheyuanliu.me/how-to">How-To</a>
 </div>
+
+If the site is unavailable, please [contact us](#contact).
+{: .section-footnote}
 
 </div>
 </section>
@@ -92,6 +369,8 @@ Concurrently, we release the code and pre-trained models for our method **C**omp
 
 Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightning](https://www.pytorchlightning.ai/).
 
+The paper, *Image Retrieval on Real-life Images with Pre-trained Vision-and-Language Models*, is available as a [PDF](https://openaccess.thecvf.com/content/ICCV2021/papers/Liu_Image_Retrieval_on_Real-Life_Images_With_Pre-Trained_Vision-and-Language_Models_ICCV_2021_paper.pdf) and on [arXiv](https://arxiv.org/abs/2108.04024).
+
 <div class="action-row">
   <a class="btn btn-outline" href="https://github.com/Cuberick-Orion/CIRPLANT" target="_blank" rel="noopener noreferrer">Code repository</a>
 </div>
@@ -106,9 +385,10 @@ Our code is in [PyTorch](https://pytorch.org/), and is based on [PyTorch Lightni
 
 <div class="panel-body" markdown="1">
 
-- **Sept. 2026**: The primary test-split evaluation server is back online after migrating to Cloudflare. Use [cirr.zheyuanliu.me](https://cirr.zheyuanliu.me/) for evaluation; [cirr.junjie.au](https://cirr.junjie.au/) remains available as a backup.
-- **Aug. 2021**: We opened the test-split evaluation server.
-- **Aug. 2021**: We released the dataset and code for the project.
+- **Sept. 2026**: The test-split evaluation server returned online after a three-day outage and migration to Cloudflare.
+- **Oct. 2024**: Added guidance for researchers having trouble obtaining raw images from NLVR2.
+- **Jun. 2024**: Updated the download links.
+- **Aug. 2021**: Released the dataset and code, and opened the test-split evaluation server.
 {: .news-list}
 
 </div>
